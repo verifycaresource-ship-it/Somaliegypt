@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aydiid Sahardiid | Special Operations & Security Professional</title>
+  <meta name="description" content="Aydiid Sahardiid – disciplined and results-driven Special Operations professional with experience in leadership, tactical operations, and high-pressure security missions.">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { inter: ['Inter', 'sans-serif'] },
+          colors: {
+            primary: '#020617',
+            accent: '#0ea5e9'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-inter text-slate-700 bg-slate-50">
+
+<!-- Header -->
+<header class="bg-white shadow-md fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-extrabold text-primary">Aydiid <span class="text-accent">Sahardiid</span></h1>
+    
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex gap-8 font-medium">
+      <a href="#home" class="hover:text-accent transition">Home</a>
+      <a href="#about" class="hover:text-accent transition">About</a>
+      <a href="#skills" class="hover:text-accent transition">Expertise</a>
+      <a href="#experience" class="hover:text-accent transition">Experience</a>
+      <a href="#contact" class="hover:text-accent transition">Contact</a>
+    </nav>
+
+    <!-- Mobile Hamburger -->
+    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5">
+      <span class="block w-6 h-0.5 bg-primary"></span>
+      <span class="block w-6 h-0.5 bg-primary"></span>
+      <span class="block w-6 h-0.5 bg-primary"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-white w-full shadow-md">
+    <nav class="flex flex-col items-center py-6 gap-6 font-medium">
+      <a href="#home" class="hover:text-accent transition">Home</a>
+      <a href="#about" class="hover:text-accent transition">About</a>
+      <a href="#skills" class="hover:text-accent transition">Expertise</a>
+      <a href="#experience" class="hover:text-accent transition">Experience</a>
+      <a href="#contact" class="hover:text-accent transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Add this script before closing body -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    btn.classList.toggle('open');
+  });
+
+  // Optional: close menu when a link is clicked
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+    });
+  });
+</script>
+
+
+<!-- Hero Section -->
+<section id="home" class="pt-32 pb-24 bg-gradient-to-br from-slate-100 to-slate-200">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Text Content -->
+    <div class="text-center md:text-left">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary">
+        Special Operations & Security Professional
+      </h2>
+      <p class="mt-6 text-base sm:text-lg text-slate-700">
+        Disciplined and results-driven security professional with proven experience in leadership, tactical operations, and high-pressure mission environments.
+      </p>
+      <p class="mt-4 text-slate-600">Mogadishu, Banaadir, Somalia</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="#contact" class="bg-accent text-white px-8 py-3 rounded-full hover:bg-sky-600 transition">Contact</a>
+        <a href="#experience" class="border border-accent text-accent px-8 py-3 rounded-full hover:bg-accent hover:text-white transition">View Experience</a>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div>
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQFDFBuNwlEezw/profile-displayphoto-crop_800_800/B4EZr4c4BEIwAI-/0/1765104913844?e=1767225600&v=beta&t=cJcWsRleK7r66ASFly8LTD-fUdHr88KWCwtEHDWwXlE" 
+           class="rounded-2xl shadow-lg object-cover w-full max-w-md mx-auto mt-8 md:mt-0" 
+           alt="Security Professional">
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-6 text-center md:text-left">
+    <h3 class="text-3xl font-bold text-primary">About Me</h3>
+    <p class="mt-6 text-lg text-slate-700">
+      I am a disciplined and results-oriented Special Operations professional with hands-on experience in security leadership, tactical operations, and mission-critical environments. My background includes working with elite security units and maintaining operational effectiveness under high pressure.
+    </p>
+    <p class="mt-4 text-slate-600">
+      I am committed to professionalism, teamwork, and mission success while upholding strict security standards and ethical conduct.
+    </p>
+  </div>
+</section>
+
+<!-- Expertise Section -->
+<section id="skills" class="py-24 bg-slate-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-primary text-center">Security Expertise</h3>
+    <p class="text-center mt-4 max-w-3xl mx-auto text-slate-600">Advanced competencies developed through elite training and real-world operational environments.</p>
+    <div class="grid md:grid-cols-3 gap-8 mt-12">
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Special Operations & Counter-Terrorism</div>
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">High-Risk Tactical Missions</div>
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Leadership & Unit Command</div>
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Threat Intelligence & Risk Analysis</div>
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Close Protection (VIP & Executive)</div>
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Urban & Critical Infrastructure Security</div>
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Incident Response & Crisis Management</div>
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Operational Planning & Mission Discipline</div>
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Security Training & Mentorship</div>
+    </div>
+  </div>
+</section>
+
+<!-- Focus Areas Section -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-primary text-center md:text-left">Security Focus Areas</h3>
+    <div class="grid md:grid-cols-2 gap-10 mt-10">
+      <div class="p-6 bg-slate-50 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold text-lg">Counter‑Terrorism & National Security</h4>
+        <p class="mt-2 text-slate-600">Experience supporting counter‑terrorism initiatives, high‑value target protection, and operations aimed at stabilizing high‑risk environments.</p>
+      </div>
+      <div class="p-6 bg-slate-50 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold text-lg">Critical Infrastructure Protection</h4>
+        <p class="mt-2 text-slate-600">Protection of government facilities, strategic assets, and sensitive locations through layered security approaches.</p>
+      </div>
+      <div class="p-6 bg-slate-50 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold text-lg">Executive & VIP Protection</h4>
+        <p class="mt-2 text-slate-600">Close protection services emphasizing discretion, situational awareness, and rapid threat response.</p>
+      </div>
+      <div class="p-6 bg-slate-50 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold text-lg">Crisis & Incident Response</h4>
+        <p class="mt-2 text-slate-600">Rapid reaction to security incidents, coordination under pressure, and maintaining operational control.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-24 bg-slate-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-primary text-center md:text-left">Professional Roles & Experience</h3>
+    <p class="mt-4 max-w-3xl text-slate-600 text-center md:text-left">A proven record of service in elite security environments, demonstrating leadership, discipline, and operational excellence.</p>
+    <div class="mt-10 space-y-6">
+      <!-- Experience Card -->
+      <div class="p-6 border-l-4 border-accent bg-white rounded-2xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold text-lg">Special Operations Officer – Delta 1 Unit</h4>
+        <p class="text-sm text-slate-500">DANAB Security Forces | Mogadishu, Somalia</p>
+        <ul class="mt-3 list-disc list-inside text-slate-600 space-y-1">
+          <li>Executed high-risk counter-terrorism and special operations missions.</li>
+          <li>Operated effectively under extreme pressure in complex security environments.</li>
+          <li>Maintained strict operational discipline and mission readiness.</li>
+        </ul>
+      </div>
+      <div class="p-6 border-l-4 border-accent bg-white rounded-2xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold text-lg">Security Team Leader</h4>
+        <p class="text-sm text-slate-500">Elite Tactical Unit</p>
+        <ul class="mt-3 list-disc list-inside text-slate-600 space-y-1">
+          <li>Led and coordinated tactical teams during security operations.</li>
+          <li>Conducted threat assessments and operational briefings.</li>
+          <li>Ensured compliance with security protocols and safety standards.</li>
+        </ul>
+      </div>
+      <div class="p-6 border-l-4 border-accent bg-white rounded-2xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold text-lg">Close Protection Specialist</h4>
+        <p class="text-sm text-slate-500">VIP & Executive Protection</p>
+        <ul class="mt-3 list-disc list-inside text-slate-600 space-y-1">
+          <li>Provided discreet personal protection for high-profile individuals.</li>
+          <li>Planned secure movement routes and advance security checks.</li>
+          <li>Responded rapidly to emerging threats and incidents.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-primary text-center">Operational Gallery</h3>
+    <p class="text-center mt-4 max-w-3xl mx-auto text-slate-600">Professional moments reflecting discipline, readiness, teamwork, and operational environments. Images are representative and non-sensitive.</p>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+      <div class="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
+        <img src="https://greydynamics.com/wp-content/uploads/2024/04/s.jpg" alt="Security Operations" class="w-full h-64 object-cover hover:scale-105 transition">
+      </div>
+      <div class="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8YQagTBkxlrvT-8deyunF2IhxKOhKVuE9Dw&s" alt="Tactical Training" class="w-full h-64 object-cover hover:scale-105 transition">
+      </div>
+      <div class="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
+        <img src="https://sonna.so/en/wp-content/uploads/2025/11/IMG_0662-768x512.jpeg" alt="Team Operations" class="w-full h-64 object-cover hover:scale-105 transition">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-24 bg-primary text-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold">Contact</h3>
+    <p class="mt-4">Available for professional security roles, consulting, and operational assignments.</p>
+    <div class="mt-8 space-y-3">
+      <p>📍 Mogadishu, Banaadir, Somalia</p>
+      <p>🔗 LinkedIn: linkedin.com/in/aydiid-sahardiid</p>
+      <p>💬 WhatsApp: +252 619 809 051</p>
+    </div>
+    <div class="mt-8 flex justify-center gap-4 flex-wrap">
+      <a href="https://www.linkedin.com/in/aydiid-sahardiid-a1b4b6398/?originalSubdomain=so" 
+         class="inline-block bg-accent px-8 py-3 rounded-full hover:bg-sky-600">
+         View LinkedIn
+      </a>
+      <a href="https://wa.me/252619809051" target="_blank" 
+         class="inline-block bg-green-500 px-8 py-3 rounded-full hover:bg-green-600 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12.04 2C6.48 2 2 6.48 2 12.04c0 2.12.55 4.1 1.53 5.84L2 22l4.28-1.47A9.943 9.943 0 0012.04 22c5.56 0 10.04-4.48 10.04-10.04S17.6 2 12.04 2zm5.48 15.03c-.24.69-1.38 1.31-1.92 1.39-.5.08-1.16.11-2.2-.27a7.065 7.065 0 01-3.36-2.25 7.11 7.11 0 01-1.42-2.2c-.23-.52-.27-1.06-.16-1.44.17-.6.68-.97.94-1.16.26-.19.57-.21.77-.19.19.02.39.03.56.03.17 0 .42-.05.66.51.24.56.82 1.92.89 2.07.07.15.12.31.03.49-.09.18-.13.31-.25.48-.12.17-.26.37-.37.49-.12.13-.24.27-.11.51.13.24.58.95 1.24 1.55.85.79 1.56 1.03 1.82 1.15.26.12.41.1.56-.06.15-.16.63-.73.8-.98.17-.25.34-.21.57-.13.23.08 1.44.68 1.69.81.25.13.41.19.47.3.05.12.05.69-.19 1.37z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-white py-8 text-center text-slate-500">
+  &copy; 2025 Aydiid Sahardiid. All rights reserved.
+</footer>
+
+</body>
+</html>
