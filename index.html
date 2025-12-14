@@ -1,259 +1,279 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="so" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aydiid Sahardiid | Special Operations & Security Professional</title>
-  <meta name="description" content="Aydiid Sahardiid – disciplined and results-driven Special Operations professional with experience in leadership, tactical operations, and high-pressure security missions.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warfaa Travel & Trade | Egypt</title>
 
-  <!-- Tailwind CSS -->
+  <!-- SEO -->
+  <meta name="description" content="Warfaa Travel & Trade – Adeegyo Safar, Caafimaad, Waxbarasho & Ganacsi oo loogu talagalay Soomaalida ku nool Masar." />
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { inter: ['Inter', 'sans-serif'] },
-          colors: {
-            primary: '#020617',
-            accent: '#0ea5e9'
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
-<body class="font-inter text-slate-700 bg-slate-50">
+<body class="bg-slate-50 text-slate-800">
 
-<!-- Header -->
-<header class="bg-white shadow-md fixed w-full z-50">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-extrabold text-primary">Aydiid <span class="text-accent">Sahardiid</span></h1>
-    
+<!-- ================= HEADER ================= -->
+<header class="fixed top-0 inset-x-0 bg-white/80 backdrop-blur shadow z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-xl bg-blue-700 text-white flex items-center justify-center font-bold">W</div>
+      <span class="font-bold text-xl">Warfaa</span>
+    </div>
+
     <!-- Desktop Nav -->
     <nav class="hidden md:flex gap-8 font-medium">
-      <a href="#home" class="hover:text-accent transition">Home</a>
-      <a href="#about" class="hover:text-accent transition">About</a>
-      <a href="#skills" class="hover:text-accent transition">Expertise</a>
-      <a href="#experience" class="hover:text-accent transition">Experience</a>
-      <a href="#contact" class="hover:text-accent transition">Contact</a>
+      <a href="#home" class="hover:text-blue-700">Home</a>
+      <a href="#services" class="hover:text-blue-700">Adeegyada</a>
+      <a href="#trade" class="hover:text-blue-700">Trade</a>
+      <a href="#about" class="hover:text-blue-700">Nagu Saabsan</a>
+      <a href="#gallery" class="hover:text-blue-700">Gallery</a>
+      <a href="#jobs" class="hover:text-blue-700">Shaqooyin</a>
+      <a href="#contact" class="hover:text-blue-700">La Xiriir</a>
     </nav>
 
-    <!-- Mobile Hamburger -->
-    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5">
-      <span class="block w-6 h-0.5 bg-primary"></span>
-      <span class="block w-6 h-0.5 bg-primary"></span>
-      <span class="block w-6 h-0.5 bg-primary"></span>
-    </button>
+    <a href="#contact" class="hidden md:inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Contact</a>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden text-3xl"><i class='bx bx-menu'></i></button>
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden bg-white w-full shadow-md">
-    <nav class="flex flex-col items-center py-6 gap-6 font-medium">
-      <a href="#home" class="hover:text-accent transition">Home</a>
-      <a href="#about" class="hover:text-accent transition">About</a>
-      <a href="#skills" class="hover:text-accent transition">Expertise</a>
-      <a href="#experience" class="hover:text-accent transition">Experience</a>
-      <a href="#contact" class="hover:text-accent transition">Contact</a>
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+    <nav class="flex flex-col p-6 gap-4 font-medium">
+      <a href="#home">Home</a>
+      <a href="#services">Adeegyada</a>
+      <a href="#trade">Trade</a>
+      <a href="#about">Nagu Saabsan</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#jobs">Shaqooyin</a>
+      <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl w-fit">Contact</a>
     </nav>
   </div>
 </header>
 
-<!-- Add this script before closing body -->
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    btn.classList.toggle('open');
-  });
-
-  // Optional: close menu when a link is clicked
-  document.querySelectorAll('#mobile-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      menu.classList.add('hidden');
-    });
-  });
-</script>
-
-
-<!-- Hero Section -->
-<section id="home" class="pt-32 pb-24 bg-gradient-to-br from-slate-100 to-slate-200">
+<!-- ================= HERO ================= -->
+<section id="home" class="pt-36 pb-24 bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 text-white">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    
-    <!-- Text Content -->
-    <div class="text-center md:text-left">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary">
-        Special Operations & Security Professional
-      </h2>
-      <p class="mt-6 text-base sm:text-lg text-slate-700">
-        Disciplined and results-driven security professional with proven experience in leadership, tactical operations, and high-pressure mission environments.
-      </p>
-      <p class="mt-4 text-slate-600">Mogadishu, Banaadir, Somalia</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-        <a href="#contact" class="bg-accent text-white px-8 py-3 rounded-full hover:bg-sky-600 transition">Contact</a>
-        <a href="#experience" class="border border-accent text-accent px-8 py-3 rounded-full hover:bg-accent hover:text-white transition">View Experience</a>
-      </div>
-    </div>
-
-    <!-- Image -->
     <div>
-      <img src="https://media.licdn.com/dms/image/v2/D4E03AQFDFBuNwlEezw/profile-displayphoto-crop_800_800/B4EZr4c4BEIwAI-/0/1765104913844?e=1767225600&v=beta&t=cJcWsRleK7r66ASFly8LTD-fUdHr88KWCwtEHDWwXlE" 
-           class="rounded-2xl shadow-lg object-cover w-full max-w-md mx-auto mt-8 md:mt-0" 
-           alt="Security Professional">
-    </div>
-  </div>
-</section>
-
-
-<!-- About Section -->
-<section id="about" class="py-24 bg-white">
-  <div class="max-w-5xl mx-auto px-6 text-center md:text-left">
-    <h3 class="text-3xl font-bold text-primary">About Me</h3>
-    <p class="mt-6 text-lg text-slate-700">
-      I am a disciplined and results-oriented Special Operations professional with hands-on experience in security leadership, tactical operations, and mission-critical environments. My background includes working with elite security units and maintaining operational effectiveness under high pressure.
-    </p>
-    <p class="mt-4 text-slate-600">
-      I am committed to professionalism, teamwork, and mission success while upholding strict security standards and ethical conduct.
-    </p>
-  </div>
-</section>
-
-<!-- Expertise Section -->
-<section id="skills" class="py-24 bg-slate-100">
-  <div class="max-w-7xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-primary text-center">Security Expertise</h3>
-    <p class="text-center mt-4 max-w-3xl mx-auto text-slate-600">Advanced competencies developed through elite training and real-world operational environments.</p>
-    <div class="grid md:grid-cols-3 gap-8 mt-12">
-      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Special Operations & Counter-Terrorism</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">High-Risk Tactical Missions</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Leadership & Unit Command</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Threat Intelligence & Risk Analysis</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Close Protection (VIP & Executive)</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Urban & Critical Infrastructure Security</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Incident Response & Crisis Management</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Operational Planning & Mission Discipline</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">Security Training & Mentorship</div>
-    </div>
-  </div>
-</section>
-
-<!-- Focus Areas Section -->
-<section class="py-24 bg-white">
-  <div class="max-w-7xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-primary text-center md:text-left">Security Focus Areas</h3>
-    <div class="grid md:grid-cols-2 gap-10 mt-10">
-      <div class="p-6 bg-slate-50 rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="font-semibold text-lg">Counter‑Terrorism & National Security</h4>
-        <p class="mt-2 text-slate-600">Experience supporting counter‑terrorism initiatives, high‑value target protection, and operations aimed at stabilizing high‑risk environments.</p>
-      </div>
-      <div class="p-6 bg-slate-50 rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="font-semibold text-lg">Critical Infrastructure Protection</h4>
-        <p class="mt-2 text-slate-600">Protection of government facilities, strategic assets, and sensitive locations through layered security approaches.</p>
-      </div>
-      <div class="p-6 bg-slate-50 rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="font-semibold text-lg">Executive & VIP Protection</h4>
-        <p class="mt-2 text-slate-600">Close protection services emphasizing discretion, situational awareness, and rapid threat response.</p>
-      </div>
-      <div class="p-6 bg-slate-50 rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="font-semibold text-lg">Crisis & Incident Response</h4>
-        <p class="mt-2 text-slate-600">Rapid reaction to security incidents, coordination under pressure, and maintaining operational control.</p>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">Warfaa Travel & Trade</h1>
+      <p class="text-lg mb-8 text-blue-100">Adeegyo dhammeystiran oo Safar, Caafimaad, Waxbarasho & Ganacsi ah — si gaar ah loogu talagalay Soomaalida ku nool Masar.</p>
+      <div class="flex gap-4">
+        <a href="#services" class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold">Adeegyada</a>
+        <a href="#contact" class="border border-white px-6 py-3 rounded-xl">La Xiriir</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="py-24 bg-slate-100">
-  <div class="max-w-7xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-primary text-center md:text-left">Professional Roles & Experience</h3>
-    <p class="mt-4 max-w-3xl text-slate-600 text-center md:text-left">A proven record of service in elite security environments, demonstrating leadership, discipline, and operational excellence.</p>
-    <div class="mt-10 space-y-6">
-      <!-- Experience Card -->
-      <div class="p-6 border-l-4 border-accent bg-white rounded-2xl shadow hover:shadow-lg transition">
-        <h4 class="font-semibold text-lg">Special Operations Officer – Delta 1 Unit</h4>
-        <p class="text-sm text-slate-500">DANAB Security Forces | Mogadishu, Somalia</p>
-        <ul class="mt-3 list-disc list-inside text-slate-600 space-y-1">
-          <li>Executed high-risk counter-terrorism and special operations missions.</li>
-          <li>Operated effectively under extreme pressure in complex security environments.</li>
-          <li>Maintained strict operational discipline and mission readiness.</li>
-        </ul>
-      </div>
-      <div class="p-6 border-l-4 border-accent bg-white rounded-2xl shadow hover:shadow-lg transition">
-        <h4 class="font-semibold text-lg">Security Team Leader</h4>
-        <p class="text-sm text-slate-500">Elite Tactical Unit</p>
-        <ul class="mt-3 list-disc list-inside text-slate-600 space-y-1">
-          <li>Led and coordinated tactical teams during security operations.</li>
-          <li>Conducted threat assessments and operational briefings.</li>
-          <li>Ensured compliance with security protocols and safety standards.</li>
-        </ul>
-      </div>
-      <div class="p-6 border-l-4 border-accent bg-white rounded-2xl shadow hover:shadow-lg transition">
-        <h4 class="font-semibold text-lg">Close Protection Specialist</h4>
-        <p class="text-sm text-slate-500">VIP & Executive Protection</p>
-        <ul class="mt-3 list-disc list-inside text-slate-600 space-y-1">
-          <li>Provided discreet personal protection for high-profile individuals.</li>
-          <li>Planned secure movement routes and advance security checks.</li>
-          <li>Responded rapidly to emerging threats and incidents.</li>
+    <div class="relative">
+      <div class="absolute -top-6 -left-6 w-72 h-72 bg-white/10 rounded-full"></div>
+      <div class="relative bg-white/10 backdrop-blur p-8 rounded-3xl shadow-xl">
+        <ul class="space-y-4 text-lg">
+          <li>✈️ Tickets & Visa</li>
+          <li>🏥 Medical Travel</li>
+          <li>🎓 Study Abroad</li>
+          <li>🏢 Business Consultancy</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Gallery Section -->
-<section id="gallery" class="py-24 bg-white">
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-24">
   <div class="max-w-7xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-primary text-center">Operational Gallery</h3>
-    <p class="text-center mt-4 max-w-3xl mx-auto text-slate-600">Professional moments reflecting discipline, readiness, teamwork, and operational environments. Images are representative and non-sensitive.</p>
+    <h2 class="text-4xl font-bold text-center mb-4">Adeegyadeena</h2>
+    <p class="text-center text-slate-600 mb-16">Waxaan bixinaa adeegyo tayo sare leh oo la isku halleyn karo</p>
 
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
-      <div class="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
-        <img src="https://greydynamics.com/wp-content/uploads/2024/04/s.jpg" alt="Security Operations" class="w-full h-64 object-cover hover:scale-105 transition">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+        <i class='bx bx-plus-medical text-4xl text-blue-700 mb-4'></i>
+        <h3 class="font-bold text-xl mb-2">Medical Travel</h3>
+        <p>Isbitaallo, dhakhaatiir, turjubaan & hagid bukaan.</p>
       </div>
-      <div class="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8YQagTBkxlrvT-8deyunF2IhxKOhKVuE9Dw&s" alt="Tactical Training" class="w-full h-64 object-cover hover:scale-105 transition">
+      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+        <i class='bx bx-book-open text-4xl text-blue-700 mb-4'></i>
+        <h3 class="font-bold text-xl mb-2">Study Abroad</h3>
+        <p>Diiwaangelin jaamacado & latalin arday.</p>
       </div>
-      <div class="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
-        <img src="https://sonna.so/en/wp-content/uploads/2025/11/IMG_0662-768x512.jpeg" alt="Team Operations" class="w-full h-64 object-cover hover:scale-105 transition">
+      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+        <i class='bx bx-briefcase text-4xl text-blue-700 mb-4'></i>
+        <h3 class="font-bold text-xl mb-2">Business Consulting</h3>
+        <p>Dhismaha shirkado & talo ganacsi.</p>
+      </div>
+      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+        <i class='bx bx-world text-4xl text-blue-700 mb-4'></i>
+        <h3 class="font-bold text-xl mb-2">Tourism</h3>
+        <p>Dalxiis, hoteelo & booqashooyin.</p>
+      </div>
+      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+        <i class='bx bx-id-card text-4xl text-blue-700 mb-4'></i>
+        <h3 class="font-bold text-xl mb-2">Visa & Tickets</h3>
+        <p>Visa, tickets & qorsheyn safar.</p>
+      </div>
+      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+        <i class='bx bx-car text-4xl text-blue-700 mb-4'></i>
+        <h3 class="font-bold text-xl mb-2">Rentals & Transport</h3>
+        <p>Guryo, gaadiid & adeegyo ajaanib.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="py-24 bg-primary text-white">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold">Contact</h3>
-    <p class="mt-4">Available for professional security roles, consulting, and operational assignments.</p>
-    <div class="mt-8 space-y-3">
-      <p>📍 Mogadishu, Banaadir, Somalia</p>
-      <p>🔗 LinkedIn: linkedin.com/in/aydiid-sahardiid</p>
-      <p>💬 WhatsApp: +252 619 809 051</p>
+<!-- ================= EXPORT IMPORT ================= -->
+<section id="trade" class="py-24 bg-slate-100">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6">Export & Import</h2>
+    <p class="text-lg text-slate-700">Warfaa waxay fududeyneysaa dhoofinta & soo-dejinta alaabooyinka u dhexeeya Masar iyo Soomaaliya iyadoo la raacayo sharciyada ganacsiga caalamiga ah.</p>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-24">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-4xl font-bold mb-6">Nagu Saabsan</h2>
+      <p class="text-lg text-slate-700">Warfaa Travel & Trade waa shirkad casri ah oo si gaar ah ugu adeegta Soomaalida ku nool Masar kuna dhisan kalsooni, khibrad, iyo adeeg daahfuran.</p>
     </div>
-    <div class="mt-8 flex justify-center gap-4 flex-wrap">
-      <a href="https://www.linkedin.com/in/aydiid-sahardiid-a1b4b6398/?originalSubdomain=so" 
-         class="inline-block bg-accent px-8 py-3 rounded-full hover:bg-sky-600">
-         View LinkedIn
-      </a>
-      <a href="https://wa.me/252619809051" target="_blank" 
-         class="inline-block bg-green-500 px-8 py-3 rounded-full hover:bg-green-600 flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12.04 2C6.48 2 2 6.48 2 12.04c0 2.12.55 4.1 1.53 5.84L2 22l4.28-1.47A9.943 9.943 0 0012.04 22c5.56 0 10.04-4.48 10.04-10.04S17.6 2 12.04 2zm5.48 15.03c-.24.69-1.38 1.31-1.92 1.39-.5.08-1.16.11-2.2-.27a7.065 7.065 0 01-3.36-2.25 7.11 7.11 0 01-1.42-2.2c-.23-.52-.27-1.06-.16-1.44.17-.6.68-.97.94-1.16.26-.19.57-.21.77-.19.19.02.39.03.56.03.17 0 .42-.05.66.51.24.56.82 1.92.89 2.07.07.15.12.31.03.49-.09.18-.13.31-.25.48-.12.17-.26.37-.37.49-.12.13-.24.27-.11.51.13.24.58.95 1.24 1.55.85.79 1.56 1.03 1.82 1.15.26.12.41.1.56-.06.15-.16.63-.73.8-.98.17-.25.34-.21.57-.13.23.08 1.44.68 1.69.81.25.13.41.19.47.3.05.12.05.69-.19 1.37z"/>
-        </svg>
-        WhatsApp
-      </a>
+    <div class="bg-gradient-to-br from-blue-700 to-indigo-700 text-white p-10 rounded-3xl">
+      <h3 class="text-2xl font-bold mb-4">Maxaa naloo doortaa?</h3>
+      <ul class="space-y-3">
+        <li>✔ Khibrad gudaha Masar</li>
+        <li>✔ Adeeg Af‑Somali ah</li>
+        <li>✔ Daahfurnaan & Kalsooni</li>
+        <li>✔ Xal hal meel ah</li>
+      </ul>
     </div>
   </div>
 </section>
 
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="py-24 bg-slate-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-16">Gallery</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <img class="rounded-2xl object-cover h-64 w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Q6iH4OnnIM-OLj9uDVFqVQz4aoyjuGK9_w&s" alt="Flight Egypt Air" />
+      <img class="rounded-2xl object-cover h-64 w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC4GrF6pR0kaDKHttpCZXXg6M9WfLKOQy24Q&s" />
+      <img class="rounded-2xl object-cover h-64 w-full" src="data:image/jpeg;base64,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" alt="Al-Azhar Egypt" />
+    </div>
+  </div>
+</section>
+<section id="furnished" class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Guryo La Diyaariyey (Furnished Houses)</h2>
+<p class="text-slate-600 text-lg">Guryo diyaar ah oo casri ah – ku habboon arday, qoysas & bukaan socdaal caafimaad</p>
+</div>
 
-<!-- Footer -->
-<footer class="bg-white py-8 text-center text-slate-500">
-  &copy; 2025 Aydiid Sahardiid. All rights reserved.
+
+<div class="grid md:grid-cols-3 gap-8">
+<!-- House 1 -->
+<div class="bg-slate-50 rounded-3xl shadow hover:shadow-lg transition overflow-hidden">
+<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688" class="h-56 w-full object-cover" alt="Furnished Apartment Cairo" />
+<div class="p-6">
+<h3 class="font-bold text-xl mb-2">Modern Apartment – Cairo</h3>
+<p class="text-slate-600 mb-4">2 Qol jiif • Fully Furnished • WiFi • AC</p>
+<a href="#contact" class="inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Book Now</a>
+</div>
+</div>
+
+
+<!-- House 2 -->
+<div class="bg-slate-50 rounded-3xl shadow hover:shadow-lg transition overflow-hidden">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" class="h-56 w-full object-cover" alt="Luxury Furnished House" />
+<div class="p-6">
+<h3 class="font-bold text-xl mb-2">Luxury Flat – Nasr City</h3>
+<p class="text-slate-600 mb-4">3 Qol • Elevator • Security • Near Services</p>
+<a href="#contact" class="inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Book Now</a>
+</div>
+</div>
+
+
+<!-- House 3 -->
+<div class="bg-slate-50 rounded-3xl shadow hover:shadow-lg transition overflow-hidden">
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" class="h-56 w-full object-cover" alt="Affordable Furnished Studio" />
+<div class="p-6">
+<h3 class="font-bold text-xl mb-2">Studio – Giza</h3>
+<p class="text-slate-600 mb-4">Qiimo Jaban • Nadiif • Ku dhow Isbitaallo</p>
+<a href="#contact" class="inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Book Now</a>
+</div>
+</div>
+</div>
+
+
+<!-- CTA -->
+<div class="mt-16 text-center">
+<a href="https://wa.me/200000000000" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition px-8 py-4 rounded-2xl text-white font-semibold">
+<i class='bx bxl-whatsapp text-2xl'></i> Weydii Guri Diyaar ah
+</a>
+</div>
+</div>
+</section>
+<!-- ================= JOBS ================= -->
+<section id="jobs" class="py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Shaqooyinka Furan</h2>
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-2xl shadow flex justify-between items-center">
+        <div><h3 class="font-bold text-xl">Travel Consultant</h3><p class="text-slate-600">Cairo – Full Time</p></div>
+        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl">Apply</a>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow flex justify-between items-center">
+        <div><h3 class="font-bold text-xl">Medical Coordinator</h3><p class="text-slate-600">Giza – Part Time</p></div>
+        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl">Apply</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-24 bg-slate-900 text-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4">La Xiriir Warfaa</h2>
+    <p class="text-center text-slate-300 mb-16">Nala soo xiriir si aad u hesho adeeg degdeg ah & mid lagu kalsoonaan karo</p>
+
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
+          <i class='bx bx-map text-3xl text-blue-500'></i>
+          <div><h4 class="font-semibold text-lg">Cinwaan</h4><p class="text-slate-300">Cairo, Egypt</p></div>
+        </div>
+        <div class="flex items-start gap-4">
+          <i class='bx bx-phone text-3xl text-blue-500'></i>
+          <div><h4 class="font-semibold text-lg">Telefoon / WhatsApp</h4><p class="text-slate-300">+20 151 418 4102</p></div>
+        </div>
+        <div class="flex items-start gap-4">
+          <i class='bx bx-envelope text-3xl text-blue-500'></i>
+          <div><h4 class="font-semibold text-lg">Email</h4><p class="text-slate-300">info@warfaa.com</p></div>
+        </div>
+        <a href="https://wa.me/200000000000" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition px-6 py-3 rounded-xl font-semibold">
+          <i class='bx bxl-whatsapp text-2xl'></i> WhatsApp Chat
+        </a>
+      </div>
+
+      <form class="bg-white p-8 rounded-3xl shadow-xl grid gap-6">
+        <input type="text" required placeholder="Magacaaga" class="p-4 rounded-xl border text-slate-900" />
+        <input type="email" required placeholder="Email" class="p-4 rounded-xl border text-slate-900" />
+        <input type="text" placeholder="Mawduuca" class="p-4 rounded-xl border text-slate-900" />
+        <textarea rows="5" required placeholder="Fariintaada" class="p-4 rounded-xl border text-slate-900"></textarea>
+        <button type="submit" class="bg-blue-700 hover:bg-blue-600 transition px-6 py-4 rounded-xl font-semibold text-white">Dir Fariin</button>
+        <p class="text-sm text-slate-500">Waxaan kula soo xiriiri doonnaa sida ugu dhaqsaha badan.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-black text-slate-400 text-center py-6">
+  <p>© 2025 Warfaa Travel & Trade – Egypt | U Adeegaya Soomaalida</p>
 </footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
 
 </body>
 </html>
