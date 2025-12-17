@@ -326,12 +326,118 @@
 </script>
 
 <!-- ================= EXPORT IMPORT ================= -->
-<section id="trade" class="py-24 bg-slate-100">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-4xl font-bold mb-6">Export & Import</h2>
-    <p class="text-lg text-slate-700">Warfaa waxay fududeyneysaa dhoofinta & soo-dejinta alaabooyinka u dhexeeya Masar iyo Soomaaliya iyadoo la raacayo sharciyada ganacsiga caalamiga ah.</p>
+<!-- Include Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<section id="logistics" class="py-24 bg-slate-100">
+  <div class="max-w-7xl mx-auto px-6 text-center relative">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">Our Transport & Logistics Services</h2>
+    <p class="text-lg md:text-xl text-slate-700 mb-12">
+      Warfaa waxay fududeyneysaa dhoofinta & soo-dejinta alaabooyinka u dhexeeya Masar iyo Soomaaliya iyadoo la raacayo sharciyada ganacsiga caalamiga ah.  
+      Waxaan bixinaa adeegyo dhameystiran oo ku saabsan duulimaadyada, maraakiibta, containers, iyo gaadiidka xamuulka.
+    </p>
+
+    <!-- Slider Wrapper -->
+    <div class="relative">
+      <!-- Left Arrow -->
+      <button id="prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100 z-20 hidden md:block">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <!-- Carousel Container -->
+      <div id="carousel" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide space-x-6 py-4">
+        
+        <!-- Flight Cargo -->
+        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-green-100 to-green-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+          <i class="fa-solid fa-plane text-4xl text-green-600 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Flight Cargo</h3>
+          <p class="text-slate-700 text-sm md:text-base">
+            Dhoofin iyo soo dejin degdeg ah oo diyaaradaha xamuulka ah ku habboon alaabo muhiim ah.
+          </p>
+        </div>
+
+        <!-- Ship Cargo -->
+        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-blue-100 to-blue-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+          <i class="fa-solid fa-ship text-4xl text-blue-600 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Ship Cargo</h3>
+          <p class="text-slate-700 text-sm md:text-base">
+            Dhoofin badeecooyin badan oo badeed ah, adeegyo ammaan ah xamuulka culus iyo ganacsiga.
+          </p>
+        </div>
+
+        <!-- Container Carrier -->
+        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-yellow-100 to-yellow-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+          <i class="fa-solid fa-box-open text-4xl text-yellow-600 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Container Carrier</h3>
+          <p class="text-slate-700 text-sm md:text-base">
+            Gaadiidka containers badda iyo dhulka, ilaalin buuxda oo alaabtaada ah.
+          </p>
+        </div>
+
+        <!-- Truck / Land Cargo -->
+        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-red-100 to-red-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+          <i class="fa-solid fa-truck-fast text-4xl text-red-600 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Truck Cargo</h3>
+          <p class="text-slate-700 text-sm md:text-base">
+            Gaadiidka dhulka ee alaabta culus iyo ganacsiga, gaarsiinta waqtigeeda.
+          </p>
+        </div>
+
+        <!-- Warehouse & Storage -->
+        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-purple-100 to-purple-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+          <i class="fa-solid fa-warehouse text-4xl text-purple-600 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Warehouse</h3>
+          <p class="text-slate-700 text-sm md:text-base">
+            Bakhaaro ammaan ah oo kaydinta alaabta kahor ama kadib safarka.
+          </p>
+        </div>
+
+        <!-- Custom Logistics -->
+        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-pink-100 to-pink-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+          <i class="fa-solid fa-people-carry-box text-4xl text-pink-600 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Custom Solutions</h3>
+          <p class="text-slate-700 text-sm md:text-base">
+            Xalal gaarsiinta alaabta oo khaas ah, iyadoo loo eegayo baahiyaha ganacsi.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Right Arrow -->
+      <button id="next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100 z-20 hidden md:block">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
   </div>
 </section>
+
+<!-- Hide scrollbar -->
+<style>
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+
+<!-- Slider Script with Autoplay -->
+<script>
+const carousel = document.getElementById('carousel');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const scrollAmount = 320;
+
+// Click arrows
+nextBtn.addEventListener('click', () => carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' }));
+prevBtn.addEventListener('click', () => carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' }));
+
+// Autoplay slider
+setInterval(() => {
+  if(carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth){
+    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+  } else {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+}, 4000);
+</script>
+
 
 <!-- ================= ABOUT ================= -->
 <section id="about" class="py-24">
