@@ -127,6 +127,203 @@
     </div>
   </div>
 </section>
+<section class="lost-persons-carousel">
+    <h2 class="section-title">⚠️ Missing Persons</h2>
+    <div class="carousel-container">
+        <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+        <div class="carousel-track" id="carouselTrack">
+            <!-- Person cards will be injected here -->
+        </div>
+        <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</section>
+
+<style>
+    .lost-persons-carousel {
+        width: 100%;
+        padding: 50px 20px;
+        background-color: #fdf6f0;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 36px;
+        color: #e74c3c;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    .carousel-container {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 20px;
+    }
+
+    .person-card {
+        flex: 0 0 calc(33.333% - 13.33px); /* 3 cards visible */
+        background: #fff;
+        border: 3px solid #e74c3c;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    .person-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .person-details {
+        text-align: left;
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    .contact-info {
+        font-weight: bold;
+        color: #e74c3c;
+        margin-bottom: 10px;
+    }
+
+    .btn-voice {
+        padding: 8px 15px;
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-voice:hover {
+        background-color: #c0392b;
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(231, 76, 60, 0.8);
+        border: none;
+        color: #fff;
+        font-size: 30px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 10;
+    }
+
+    .carousel-btn.prev {
+        left: -15px;
+    }
+
+    .carousel-btn.next {
+        right: -15px;
+    }
+
+    @media (max-width: 900px) {
+        .person-card {
+            flex: 0 0 calc(50% - 10px); /* 2 cards visible */
+        }
+    }
+
+    @media (max-width: 600px) {
+        .person-card {
+            flex: 0 0 100%; /* 1 card visible */
+        }
+        .carousel-btn.prev { left: 5px; }
+        .carousel-btn.next { right: 5px; }
+    }
+</style>
+
+<script>
+    const missingPersons = [
+        { name: "JABRIL MAHAMUD",
+    ageGender: "Male, 17",
+    lastSeen: "Cairo, Egypt, 17/DEc at2 PM",
+    clothing: "T-shirt, Toruser, Sandals",
+    condition: "Mentally ill",
+    contact: "+20 15 14184102",
+    photo: "https://res.cloudinary.com/duwcyaitg/image/upload/v1766000408/WhatsApp_Image_2025-12-17_at_22.31.49_sb8zhp.jpg"
+ },
+                { name: "Cawo Amiir Xasan",
+    ageGender: "Female, Unknown",
+    lastSeen: "Cairo, Egypt, 17/DEc at2 PM",
+    lastSeen: "Xfda Sahraa, living with two girls from Mogadishu, missing 7 days",
+    contact: "+20 15 14184102",
+    photo: "https://res.cloudinary.com/duwcyaitg/image/upload/v1766001045/WhatsApp_Image_2025-12-17_at_22.47.52_rqr58a.jpg"
+ },
+        // { name: "Michael Brown", ageGender: "Male, 40", lastSeen: "Brooklyn", clothing: "Gray hoodie", contact: "+1-345", photo: "person3.jpg" },
+        // { name: "Emily Johnson", ageGender: "Female, 22", lastSeen: "Queens", clothing: "Green jacket", contact: "+1-456", photo: "person4.jpg" },
+        // { name: "David Lee", ageGender: "Male, 30", lastSeen: "Manhattan", clothing: "Black coat", contact: "+1-567", photo: "person5.jpg" },
+        // { name: "Sarah Wilson", ageGender: "Female, 27", lastSeen: "Bronx", clothing: "Blue sweater", contact: "+1-678", photo: "person6.jpg" }
+    ];
+
+    const track = document.getElementById('carouselTrack');
+
+    missingPersons.forEach((person, index) => {
+        const card = document.createElement('div');
+        card.className = 'person-card';
+        card.innerHTML = `
+            <img src="${person.photo}" alt="${person.name}">
+            <div class="person-details">
+                <p><strong>Name:</strong> ${person.name}</p>
+                <p><strong>Age/Gender:</strong> ${person.ageGender}</p>
+                <p><strong>Last Seen:</strong> ${person.lastSeen}</p>
+                <p><strong>Clothing:</strong> ${person.clothing}</p>
+            </div>
+            <div class="contact-info">Call: ${person.contact}</div>
+            <button class="btn-voice" onclick="speakPerson(${index})">🔊 Voice Alert</button>
+        `;
+        track.appendChild(card);
+    });
+
+    let currentIndex = 0;
+    const totalCards = missingPersons.length;
+    const visibleCards = 3; // number of visible cards
+    const cardWidth = track.querySelector('.person-card').offsetWidth + 20; // card width + gap
+
+    function updateCarousel() {
+        const offset = -currentIndex * cardWidth;
+        track.style.transform = `translateX(${offset}px)`;
+    }
+
+    function nextSlide() {
+        if(currentIndex < totalCards - visibleCards) currentIndex++;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        if(currentIndex > 0) currentIndex--;
+        updateCarousel();
+    }
+
+    function speakPerson(index) {
+        const person = missingPersons[index];
+        const text = `Lost Person: ${person.name}, ${person.ageGender}. Last seen at ${person.lastSeen}. Wearing ${person.clothing}. Call ${person.contact}.`;
+        if ('speechSynthesis' in window) {
+            const msg = new SpeechSynthesisUtterance(text);
+            msg.rate = 1;
+            window.speechSynthesis.speak(msg);
+        } else {
+            alert("Speech synthesis not supported in this browser.");
+        }
+    }
+</script>
 
 <!-- ================= EXPORT IMPORT ================= -->
 <section id="trade" class="py-24 bg-slate-100">
