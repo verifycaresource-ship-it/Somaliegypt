@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="so" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Somali Egypt Community & Counsaltance | Egypt</title>
 
   <!-- SEO -->
-  <meta name="description" content="Warfaa Travel & Trade – Adeegyo Safar, Caafimaad, Waxbarasho & Ganacsi oo loogu talagalay Soomaalida ku nool Masar." />
+  <meta name="description"
+    content="Warfaa Travel & Trade – Adeegyo Safar, Caafimaad, Waxbarasho & Ganacsi oo loogu talagalay Soomaalida ku nool Masar." />
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,271 +16,281 @@
   <!-- Icons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-slate-50 text-slate-800">
 
-<!-- ================= HEADER ================= -->
-<header class="fixed top-0 inset-x-0 bg-white/80 backdrop-blur shadow z-50">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <div class="flex items-center gap-2">
-   <img 
-    src="https://res.cloudinary.com/duwcyaitg/image/upload/v1766009166/download_qdvwyc.jpg" 
-    alt="Profile" 
-    class="w-20 h-30 rounded-xl object-cover"
-/>
+  <!-- ================= HEADER ================= -->
+  <header class="fixed top-0 inset-x-0 bg-white/80 backdrop-blur shadow z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <img src="https://res.cloudinary.com/duwcyaitg/image/upload/v1766009166/download_qdvwyc.jpg" alt="Profile"
+          class="w-20 h-30 rounded-xl object-cover" />
 
-      <span class="font-bold text-xl">Somali-Egypt</span>
+        <span class="font-bold text-xl">Somali-Egypt</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex gap-8 font-medium">
+        <a href="#home" class="hover:text-blue-700">Home</a>
+        <a href="#services" class="hover:text-blue-700">Adeegyada</a>
+        <a href="#trade" class="hover:text-blue-700">Trade</a>
+        <a href="#about" class="hover:text-blue-700">Nagu Saabsan</a>
+        <a href="#gallery" class="hover:text-blue-700">Gallery</a>
+        <a href="#jobs" class="hover:text-blue-700">Shaqooyin</a>
+        <a href="#contact" class="hover:text-blue-700">La Xiriir</a>
+      </nav>
+
+      <a href="#contact" class="hidden md:inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Contact</a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-3xl"><i class='bx bx-menu'></i></button>
     </div>
 
-    <!-- Desktop Nav -->
-    <nav class="hidden md:flex gap-8 font-medium">
-      <a href="#home" class="hover:text-blue-700">Home</a>
-      <a href="#services" class="hover:text-blue-700">Adeegyada</a>
-      <a href="#trade" class="hover:text-blue-700">Trade</a>
-      <a href="#about" class="hover:text-blue-700">Nagu Saabsan</a>
-      <a href="#gallery" class="hover:text-blue-700">Gallery</a>
-      <a href="#jobs" class="hover:text-blue-700">Shaqooyin</a>
-      <a href="#contact" class="hover:text-blue-700">La Xiriir</a>
-    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <nav class="flex flex-col p-6 gap-4 font-medium">
+        <a href="#home">Home</a>
+        <a href="#services">Adeegyada</a>
+        <a href="#trade">Trade</a>
+        <a href="#about">Nagu Saabsan</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#jobs">Shaqooyin</a>
+        <a href="#sports" class="hover:text-blue-700">Sports Club</a>
+        <a href="#refugee-updates" class="hover:text-blue-700">UN Updates</a>
+        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl w-fit">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <a href="#contact" class="hidden md:inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Contact</a>
-
-    <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="md:hidden text-3xl"><i class='bx bx-menu'></i></button>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-    <nav class="flex flex-col p-6 gap-4 font-medium">
-      <a href="#home">Home</a>
-      <a href="#services">Adeegyada</a>
-      <a href="#trade">Trade</a>
-      <a href="#about">Nagu Saabsan</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#jobs">Shaqooyin</a>
-      <a href="#sports" class="hover:text-blue-700">Sports Club</a>
-      <a href="#refugee-updates" class="hover:text-blue-700">UN Updates</a>
-      <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl w-fit">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- ================= HERO ================= -->
-<section id="home" class="pt-36 pb-24 bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 text-white">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    <div>
-      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">Warfaa Consultance </h1>
-      <p class="text-lg mb-8 text-blue-100">Adeegyo dhammeystiran oo Safar, Caafimaad, Waxbarasho & Ganacsi ah — si gaar ah loogu talagalay Soomaalida ku nool Masar.</p>
-      <div class="flex gap-4">
-        <a href="#services" class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold">Adeegyada</a>
-        <a href="#contact" class="border border-white px-6 py-3 rounded-xl">La Xiriir</a>
+  <!-- ================= HERO ================= -->
+  <section id="home" class="pt-36 pb-24 bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 text-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">Warfaa Consultance </h1>
+        <p class="text-lg mb-8 text-blue-100">Adeegyo dhammeystiran oo Safar, Caafimaad, Waxbarasho & Ganacsi ah — si
+          gaar ah loogu talagalay Soomaalida ku nool Masar.</p>
+        <div class="flex gap-4">
+          <a href="#services" class="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold">Adeegyada</a>
+          <a href="#contact" class="border border-white px-6 py-3 rounded-xl">La Xiriir</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -top-6 -left-6 w-72 h-72 bg-white/10 rounded-full"></div>
+        <div class="relative bg-white/10 backdrop-blur p-8 rounded-3xl shadow-xl">
+          <ul class="space-y-4 text-lg">
+            <li>✈️ Tickets & Visa</li>
+            <li>🏥 Medical Travel</li>
+            <li>🎓 Study Abroad</li>
+            <li>🏢 Business Consultancy</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="relative">
-      <div class="absolute -top-6 -left-6 w-72 h-72 bg-white/10 rounded-full"></div>
-      <div class="relative bg-white/10 backdrop-blur p-8 rounded-3xl shadow-xl">
-        <ul class="space-y-4 text-lg">
-          <li>✈️ Tickets & Visa</li>
-          <li>🏥 Medical Travel</li>
-          <li>🎓 Study Abroad</li>
-          <li>🏢 Business Consultancy</li>
-        </ul>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-4">Adeegyadeena</h2>
+      <p class="text-center text-slate-600 mb-16">Waxaan bixinaa adeegyo tayo sare leh oo la isku halleyn karo</p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+          <i class='bx bx-plus-medical text-4xl text-blue-700 mb-4'></i>
+          <h3 class="font-bold text-xl mb-2">Medical Travel</h3>
+          <p>Isbitaallo, dhakhaatiir, turjubaan & hagid bukaan.</p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+          <i class='bx bx-book-open text-4xl text-blue-700 mb-4'></i>
+          <h3 class="font-bold text-xl mb-2">Study Abroad</h3>
+          <p>Diiwaangelin jaamacado & latalin arday.</p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+          <i class='bx bx-briefcase text-4xl text-blue-700 mb-4'></i>
+          <h3 class="font-bold text-xl mb-2">Business Consulting</h3>
+          <p>Dhismaha shirkado & talo ganacsi.</p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+          <i class='bx bx-world text-4xl text-blue-700 mb-4'></i>
+          <h3 class="font-bold text-xl mb-2">Tourism</h3>
+          <p>Dalxiis, hoteelo & booqashooyin.</p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+          <i class='bx bx-id-card text-4xl text-blue-700 mb-4'></i>
+          <h3 class="font-bold text-xl mb-2">Visa & Tickets</h3>
+          <p>Visa, tickets & qorsheyn safar.</p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
+          <i class='bx bx-car text-4xl text-blue-700 mb-4'></i>
+          <h3 class="font-bold text-xl mb-2">Rentals & Transport</h3>
+          <p>Guryo, gaadiid & adeegyo ajaanib.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ================= SERVICES ================= -->
-<section id="services" class="py-24">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-4">Adeegyadeena</h2>
-    <p class="text-center text-slate-600 mb-16">Waxaan bixinaa adeegyo tayo sare leh oo la isku halleyn karo</p>
-
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
-        <i class='bx bx-plus-medical text-4xl text-blue-700 mb-4'></i>
-        <h3 class="font-bold text-xl mb-2">Medical Travel</h3>
-        <p>Isbitaallo, dhakhaatiir, turjubaan & hagid bukaan.</p>
-      </div>
-      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
-        <i class='bx bx-book-open text-4xl text-blue-700 mb-4'></i>
-        <h3 class="font-bold text-xl mb-2">Study Abroad</h3>
-        <p>Diiwaangelin jaamacado & latalin arday.</p>
-      </div>
-      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
-        <i class='bx bx-briefcase text-4xl text-blue-700 mb-4'></i>
-        <h3 class="font-bold text-xl mb-2">Business Consulting</h3>
-        <p>Dhismaha shirkado & talo ganacsi.</p>
-      </div>
-      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
-        <i class='bx bx-world text-4xl text-blue-700 mb-4'></i>
-        <h3 class="font-bold text-xl mb-2">Tourism</h3>
-        <p>Dalxiis, hoteelo & booqashooyin.</p>
-      </div>
-      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
-        <i class='bx bx-id-card text-4xl text-blue-700 mb-4'></i>
-        <h3 class="font-bold text-xl mb-2">Visa & Tickets</h3>
-        <p>Visa, tickets & qorsheyn safar.</p>
-      </div>
-      <div class="bg-white rounded-3xl p-8 shadow hover:shadow-lg transition">
-        <i class='bx bx-car text-4xl text-blue-700 mb-4'></i>
-        <h3 class="font-bold text-xl mb-2">Rentals & Transport</h3>
-        <p>Guryo, gaadiid & adeegyo ajaanib.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="lost-persons-carousel">
+  </section>
+  <section class="lost-persons-carousel">
     <h2 class="section-title">⚠️ Missing</h2>
     <div class="carousel-container">
-        <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
-        <div class="carousel-track" id="carouselTrack">
-            <!-- Person cards will be injected here -->
-        </div>
-        <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+      <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+      <div class="carousel-track" id="carouselTrack">
+        <!-- Person cards will be injected here -->
+      </div>
+      <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
     </div>
-</section>
+  </section>
 
-<style>
+  <style>
     .lost-persons-carousel {
-        width: 100%;
-        padding: 50px 20px;
-        background-color: #fdf6f0;
-        text-align: center;
+      width: 100%;
+      padding: 50px 20px;
+      background-color: #fdf6f0;
+      text-align: center;
     }
 
     .section-title {
-        font-size: 36px;
-        color: #e74c3c;
-        margin-bottom: 40px;
-        font-weight: bold;
+      font-size: 36px;
+      color: #e74c3c;
+      margin-bottom: 40px;
+      font-weight: bold;
     }
 
     .carousel-container {
-        position: relative;
-        max-width: 1000px;
-        margin: 0 auto;
-        overflow: hidden;
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
     }
 
     .carousel-track {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        gap: 20px;
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      gap: 20px;
     }
 
     .person-card {
-        flex: 0 0 calc(33.333% - 13.33px); /* 3 cards visible */
-        background: #fff;
-        border: 3px solid #e74c3c;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        text-align: center;
+      flex: 0 0 calc(33.333% - 13.33px);
+      /* 3 cards visible */
+      background: #fff;
+      border: 3px solid #e74c3c;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
     }
 
     .person-card img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 10px;
-        margin-bottom: 15px;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
 
     .person-details {
-        text-align: left;
-        font-size: 14px;
-        color: #333;
-        margin-bottom: 10px;
-        line-height: 1.5;
+      text-align: left;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px;
+      line-height: 1.5;
     }
 
     .contact-info {
-        font-weight: bold;
-        color: #e74c3c;
-        margin-bottom: 10px;
+      font-weight: bold;
+      color: #e74c3c;
+      margin-bottom: 10px;
     }
 
     .btn-voice {
-        padding: 8px 15px;
-        background-color: #e74c3c;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 14px;
-        transition: background-color 0.3s ease;
+      padding: 8px 15px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
     }
 
     .btn-voice:hover {
-        background-color: #c0392b;
+      background-color: #c0392b;
     }
 
     .carousel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(231, 76, 60, 0.8);
-        border: none;
-        color: #fff;
-        font-size: 30px;
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 50%;
-        z-index: 10;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(231, 76, 60, 0.8);
+      border: none;
+      color: #fff;
+      font-size: 30px;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 10;
     }
 
     .carousel-btn.prev {
-        left: -15px;
+      left: -15px;
     }
 
     .carousel-btn.next {
-        right: -15px;
+      right: -15px;
     }
 
     @media (max-width: 900px) {
-        .person-card {
-            flex: 0 0 calc(50% - 10px); /* 2 cards visible */
-        }
+      .person-card {
+        flex: 0 0 calc(50% - 10px);
+        /* 2 cards visible */
+      }
     }
 
     @media (max-width: 600px) {
-        .person-card {
-            flex: 0 0 100%; /* 1 card visible */
-        }
-        .carousel-btn.prev { left: 5px; }
-        .carousel-btn.next { right: 5px; }
-    }
-</style>
+      .person-card {
+        flex: 0 0 100%;
+        /* 1 card visible */
+      }
 
-<script>
+      .carousel-btn.prev {
+        left: 5px;
+      }
+
+      .carousel-btn.next {
+        right: 5px;
+      }
+    }
+  </style>
+
+  <script>
     const missingPersons = [
-        { name: "JABRIL MAHAMUD",
-    ageGender: "Male, 17",
-    lastSeen: "Cairo, Egypt, 17/DEC,  at2 PM",
-    clothing: "T-shirt, Toruser, Sandals",
-    condition: "Mentally ill",
-    contact: "+20 15 14184102",
-    photo: "https://res.cloudinary.com/duwcyaitg/image/upload/v1766000408/WhatsApp_Image_2025-12-17_at_22.31.49_sb8zhp.jpg"
- },
-                { name: "Cawo Amiir Xasan",
-    ageGender: "Female, Unknown",
-    lastSeen: "Cairo, Egypt, 17/DEc at2 PM",
-    lastSeen: "Xfda Sahraa, living with two girls from Mogadishu, missing 7 days",
-    contact: "+20 15 14184102",
-    photo: "https://res.cloudinary.com/duwcyaitg/image/upload/v1766001045/WhatsApp_Image_2025-12-17_at_22.47.52_rqr58a.jpg"
- },
-        // { name: "Michael Brown", ageGender: "Male, 40", lastSeen: "Brooklyn", clothing: "Gray hoodie", contact: "+1-345", photo: "person3.jpg" },
-        // { name: "Emily Johnson", ageGender: "Female, 22", lastSeen: "Queens", clothing: "Green jacket", contact: "+1-456", photo: "person4.jpg" },
-        // { name: "David Lee", ageGender: "Male, 30", lastSeen: "Manhattan", clothing: "Black coat", contact: "+1-567", photo: "person5.jpg" },
-        // { name: "Sarah Wilson", ageGender: "Female, 27", lastSeen: "Bronx", clothing: "Blue sweater", contact: "+1-678", photo: "person6.jpg" }
+      {
+        name: "JABRIL MAHAMUD",
+        ageGender: "Male, 17",
+        lastSeen: "Cairo, Egypt, 17/DEC,  at2 PM",
+        clothing: "T-shirt, Toruser, Sandals",
+        condition: "Mentally ill",
+        contact: "+20 15 14184102",
+        photo: "https://res.cloudinary.com/duwcyaitg/image/upload/v1766000408/WhatsApp_Image_2025-12-17_at_22.31.49_sb8zhp.jpg"
+      },
+      {
+        name: "Cawo Amiir Xasan",
+        ageGender: "Female, Unknown",
+        lastSeen: "Cairo, Egypt, 17/DEc at2 PM",
+        lastSeen: "Xfda Sahraa, living with two girls from Mogadishu, missing 7 days",
+        contact: "+20 15 14184102",
+        photo: "https://res.cloudinary.com/duwcyaitg/image/upload/v1766001045/WhatsApp_Image_2025-12-17_at_22.47.52_rqr58a.jpg"
+      },
+      // { name: "Michael Brown", ageGender: "Male, 40", lastSeen: "Brooklyn", clothing: "Gray hoodie", contact: "+1-345", photo: "person3.jpg" },
+      // { name: "Emily Johnson", ageGender: "Female, 22", lastSeen: "Queens", clothing: "Green jacket", contact: "+1-456", photo: "person4.jpg" },
+      // { name: "David Lee", ageGender: "Male, 30", lastSeen: "Manhattan", clothing: "Black coat", contact: "+1-567", photo: "person5.jpg" },
+      // { name: "Sarah Wilson", ageGender: "Female, 27", lastSeen: "Bronx", clothing: "Blue sweater", contact: "+1-678", photo: "person6.jpg" }
     ];
 
     const track = document.getElementById('carouselTrack');
 
     missingPersons.forEach((person, index) => {
-        const card = document.createElement('div');
-        card.className = 'person-card';
-        card.innerHTML = `
+      const card = document.createElement('div');
+      card.className = 'person-card';
+      card.innerHTML = `
             <img src="${person.photo}" alt="${person.name}">
             <div class="person-details">
                 <p><strong>Name:</strong> ${person.name}</p>
@@ -289,7 +301,7 @@
             <div class="contact-info">Call: ${person.contact}</div>
             <button class="btn-voice" onclick="speakPerson(${index})">🔊 Voice Alert</button>
         `;
-        track.appendChild(card);
+      track.appendChild(card);
     });
 
     let currentIndex = 0;
@@ -298,465 +310,525 @@
     const cardWidth = track.querySelector('.person-card').offsetWidth + 20; // card width + gap
 
     function updateCarousel() {
-        const offset = -currentIndex * cardWidth;
-        track.style.transform = `translateX(${offset}px)`;
+      const offset = -currentIndex * cardWidth;
+      track.style.transform = `translateX(${offset}px)`;
     }
 
     function nextSlide() {
-        if(currentIndex < totalCards - visibleCards) currentIndex++;
-        updateCarousel();
+      if (currentIndex < totalCards - visibleCards) currentIndex++;
+      updateCarousel();
     }
 
     function prevSlide() {
-        if(currentIndex > 0) currentIndex--;
-        updateCarousel();
+      if (currentIndex > 0) currentIndex--;
+      updateCarousel();
     }
 
     function speakPerson(index) {
-        const person = missingPersons[index];
-        const text = `Lost Person: ${person.name}, ${person.ageGender}. Last seen at ${person.lastSeen}. Wearing ${person.clothing}. Call ${person.contact}.`;
-        if ('speechSynthesis' in window) {
-            const msg = new SpeechSynthesisUtterance(text);
-            msg.rate = 1;
-            window.speechSynthesis.speak(msg);
-        } else {
-            alert("Speech synthesis not supported in this browser.");
-        }
+      const person = missingPersons[index];
+      const text = `Lost Person: ${person.name}, ${person.ageGender}. Last seen at ${person.lastSeen}. Wearing ${person.clothing}. Call ${person.contact}.`;
+      if ('speechSynthesis' in window) {
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.rate = 1;
+        window.speechSynthesis.speak(msg);
+      } else {
+        alert("Speech synthesis not supported in this browser.");
+      }
     }
-</script>
+  </script>
 
-<!-- ================= EXPORT IMPORT ================= -->
-<!-- Include Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ================= EXPORT IMPORT ================= -->
+  <!-- Include Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<section id="logistics" class="py-24 bg-slate-100">
-  <div class="max-w-7xl mx-auto px-6 text-center relative">
-    <h2 class="text-4xl md:text-5xl font-bold mb-6">Our Transport & Logistics Services</h2>
-    <p class="text-lg md:text-xl text-slate-700 mb-12">
-      Warfaa waxay fududeyneysaa dhoofinta & soo-dejinta alaabooyinka u dhexeeya Masar iyo Soomaaliya iyadoo la raacayo sharciyada ganacsiga caalamiga ah.  
-      Waxaan bixinaa adeegyo dhameystiran oo ku saabsan duulimaadyada, maraakiibta, containers, iyo gaadiidka xamuulka.
-    </p>
-
-    <!-- Slider Wrapper -->
-    <div class="relative">
-      <!-- Left Arrow -->
-      <button id="prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100 z-20 hidden md:block">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
-
-      <!-- Carousel Container -->
-      <div id="carousel" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide space-x-6 py-4">
-        
-        <!-- Flight Cargo -->
-        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-green-100 to-green-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
-          <i class="fa-solid fa-plane text-4xl text-green-600 mx-auto mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Flight Cargo</h3>
-          <p class="text-slate-700 text-sm md:text-base">
-            Dhoofin iyo soo dejin degdeg ah oo diyaaradaha xamuulka ah ku habboon alaabo muhiim ah.
-          </p>
-        </div>
-
-        <!-- Ship Cargo -->
-        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-blue-100 to-blue-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
-          <i class="fa-solid fa-ship text-4xl text-blue-600 mx-auto mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Ship Cargo</h3>
-          <p class="text-slate-700 text-sm md:text-base">
-            Dhoofin badeecooyin badan oo badeed ah, adeegyo ammaan ah xamuulka culus iyo ganacsiga.
-          </p>
-        </div>
-
-        <!-- Container Carrier -->
-        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-yellow-100 to-yellow-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
-          <i class="fa-solid fa-box-open text-4xl text-yellow-600 mx-auto mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Container Carrier</h3>
-          <p class="text-slate-700 text-sm md:text-base">
-            Gaadiidka containers badda iyo dhulka, ilaalin buuxda oo alaabtaada ah.
-          </p>
-        </div>
-
-        <!-- Truck / Land Cargo -->
-        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-red-100 to-red-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
-          <i class="fa-solid fa-truck-fast text-4xl text-red-600 mx-auto mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Truck Cargo</h3>
-          <p class="text-slate-700 text-sm md:text-base">
-            Gaadiidka dhulka ee alaabta culus iyo ganacsiga, gaarsiinta waqtigeeda.
-          </p>
-        </div>
-
-        <!-- Warehouse & Storage -->
-        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-purple-100 to-purple-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
-          <i class="fa-solid fa-warehouse text-4xl text-purple-600 mx-auto mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Warehouse</h3>
-          <p class="text-slate-700 text-sm md:text-base">
-            Bakhaaro ammaan ah oo kaydinta alaabta kahor ama kadib safarka.
-          </p>
-        </div>
-
-        <!-- Custom Logistics -->
-        <div class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-pink-100 to-pink-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
-          <i class="fa-solid fa-people-carry-box text-4xl text-pink-600 mx-auto mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Custom Solutions</h3>
-          <p class="text-slate-700 text-sm md:text-base">
-            Xalal gaarsiinta alaabta oo khaas ah, iyadoo loo eegayo baahiyaha ganacsi.
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Right Arrow -->
-      <button id="next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100 z-20 hidden md:block">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- Hide scrollbar -->
-<style>
-.scrollbar-hide::-webkit-scrollbar { display: none; }
-.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-</style>
-
-<!-- Slider Script with Autoplay -->
-<script>
-const carousel = document.getElementById('carousel');
-const prevBtn = document.getElementById('prev');
-const nextBtn = document.getElementById('next');
-const scrollAmount = 320;
-
-// Click arrows
-nextBtn.addEventListener('click', () => carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' }));
-prevBtn.addEventListener('click', () => carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' }));
-
-// Autoplay slider
-setInterval(() => {
-  if(carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth){
-    carousel.scrollTo({ left: 0, behavior: 'smooth' });
-  } else {
-    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  }
-}, 4000);
-</script>
-
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="py-24">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    <div>
-      <h2 class="text-4xl font-bold mb-6">Nagu Saabsan</h2>
-      <p class="text-lg text-slate-700">Warfaa Travel & Trade waa shirkad casri ah oo si gaar ah ugu adeegta Soomaalida ku nool Masar kuna dhisan kalsooni, khibrad, iyo adeeg daahfuran.</p>
-    </div>
-    <div class="bg-gradient-to-br from-blue-700 to-indigo-700 text-white p-10 rounded-3xl">
-      <h3 class="text-2xl font-bold mb-4">Maxaa naloo doortaa?</h3>
-      <ul class="space-y-3">
-        <li>✔ Khibrad gudaha Masar</li>
-        <li>✔ Adeeg Af‑Somali ah</li>
-        <li>✔ Daahfurnaan & Kalsooni</li>
-        <li>✔ Kalsooni buuxda</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ================= GALLERY ================= -->
-<section id="gallery" class="py-24 bg-slate-100">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-16">Gallery</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <img class="rounded-2xl object-cover h-64 w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Q6iH4OnnIM-OLj9uDVFqVQz4aoyjuGK9_w&s" alt="Flight Egypt Air" />
-      <img class="rounded-2xl object-cover h-64 w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC4GrF6pR0kaDKHttpCZXXg6M9WfLKOQy24Q&s" />
-      <img class="rounded-2xl object-cover h-64 w-full" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTEhIVFRUXGRgXGBgXGRgaGhgYGBgYFxcYHR0fHyggGBolHR0XITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHyUtLS0tLy0rLS0tLS0tLS0tLS0tLS0tLS0tLS01LS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKIBNgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAIEBQYBBwj/xABJEAABAgQDBAcFBgMFBQkAAAABAhEAAxIhBDFBBSJRYQYTMnGBkaEHQrHB8BQjUmLR4ZKy8RUzcnOiJENjgsIWJjRTVGTD0uL/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAsEQACAgEDBAEBCAMAAAAAAAAAAQIRAxIhMQQiQVFhEwUUMnGRobHhgfDx/9oADAMBAAIRAxEAPwDPtCaHNHY9+zyxrRxofCgGMIjjQ+FBY6GNCh7RxoLENhR2mO0w7GhsKHtHGhBQ2E0OphAQDoa0OAjoTDgILHQxoTQRokYDZ65yqUNxJNgBziJTUVbZUYtukQ6YVMWu09hzJAqJStL5pexOhB+PdFa0TjyxyR1RY543F0wbQmh5EcaNCRjRyHNCaGIa0Joc0daCxjKY40EpjtMFhQJo7BKIVELUOgbR1oJRHaIVhQFoUGojtEGoKYBo6BBSiFTBqChgEJoIEwPEmlCzwSTm2Q4sW8oTlSsaiIphQWnhCgUtgo40caCUwqYLM6Bwmh9MdpgsEgbQmglMKmDUVQNoTQWmOFEGoKBtCglEcogsKGQmh1MKmCwGtHWjrR0CCxnGhyUx0CHpEJsaOJREvZG1JCbBaVEneZTsz2IT2fGBS0xUE/ZkLMrDSZhCliWZqQohRnSZaUgOGSyl8NC+b+f1+pwSXB1dNSds1OK2zhVoKFTpaX/4qHfSxPFrNFPMksWd4avaipilS1YVNBXiUuhRQRLlhIlKsrtFRIUQOBAzgvUhIpSGAsPrjGP2epRteDTqnGVPyAKYaRBlCGNHrJnFQIiFTBKY6EQ7FQKmOhMGCI71cLUOgQTDqIMEQ4y+64BsQbG+kZuZWkAEQ4IgwRHaYWodAKI4125PFhhsCpd3Ycf0EWkrZkpmKX5uX9LRy5ethB1ZvDBKSsztMLdekneIJAYXZgdQ2Y0OcW+L2RSKkqDcFEA+eR9IhSqQSlTBRBCQTfjYZns/GCfVw0aov0EcMtVNESiOURJUhixF45THUp2Y0RwiEtFm42884kUwCfiUIWgKe9SrDQMCScgBVGebJpg2VjjckPmS2JBhRInTUrLpBBFiC2djoToRnChYcuvGmGSOmTRHohUwaiOUxrqTMKA0RyiD0wqYeoKABMdCYNTCphah0CphUwamOUwtQ6A0wqYNRHCiHqDSBpjhTB6IVEGoNICmOUwcphUw9QaQQTBEphwTDwmE5DSEgQ3YKJi+uqJLTZiQA7MCki3G/nBQIk9HyyJpDP1k3LjUzd9mjzftGXYvzOzpF3MdOwrAlr3uUt2s7njr3RXkRbYKuhdaphu46wAKFsnCUgh3OWucVoTEfZzrVv6K6tXQEohtESCmOUx6eo4tICiOhEFphBMGodDAiOhMFCY7TEuQ6BpRDzISlgl8ku+b5cTmQYehI1Zsi9wxsX5Q0TZYDW17NwDUSGYEfq0cHU9Q4ZFX+2dOHEpRdjT52f6+tIelN8nu3kPg7crwP7S9ky5h5sw905v+YHwLXBh4lTVZSi3NT51A9ljZh4KtqIwn1k2qs2j06QaXiFlmIFtL5ByRm4yyy5mwS5ytVn3jaz2AFr2B7/PLg2diD+FN3GRuwYsrIu4toB3Q+ZshQKQueU1qZICqSSHXSGDHcSR3DQxyLc2oYuVvE/8AKVaNUgnvSAOOjbxhiJiakALTwIqD2UouQ75Ob8fKf/2bQnfKiointEnslxqOPC7B3ipwVuqKQgAhQLIKTulYSA+jPZuPGHK0gSJW0GMxRGRYjuIECXIUACRY/X6+UEmTJYXdabnJw/gM793GHTccggtWbDIE2zF2bxeO5dXpjBR/yc30LcmwATEXHBpkrN97+aXwiZLnuGCDmLkoYlnGSjpdiOYgC1VhJpG66rCYogAsWZCalVO6X55RGfPKbaXBWLGo03ySAhwLE259+nf9PHYEiZMUpaTakgB0AVWDqDlTh7W5cWCjlTpUbPcmLlpAuaQ3vbo4jtMSfCGYWQFXcEjIODnaL1fRWcm4KCfyqA55FAHrrAZnR6czdWtQsGKussE0gMZhLsxNrm5d4tZJxi4K9zHTFvUU0zDkKp4+LPCnYcgAsRpf4xOOzpqC5lTE3zCVp+CQ4zzPvchEeZLJDEt4p5s7lR/D5K5RqurmpJvwR9CNOgH2c0v4+EMRKJy0+m74sZXWEEZ21BLPndkjjb8oD726KXNCLEA3OZAblZ76RUetnpfu/wBgfTxv4IaUPYRymJklgVEixypZgLn3mDWJ1y7nbJlVTFKq3L2DqIUGSoEpcBilVixeu5GWv31W9tiPu7pEUpjjRMnyRUACz5k7t/GOzsO5TSxe1suR7v0jSPVxdL2iXhashUxymJuJw1LW5d508Twhk2RSB9fX7RpHqIyqvJLxSV/BFphUwdUpvrKOGWzc4uOaLqnyS4NcggmHBMEKGztZ4cpDZl7A91svCE8qtIagwYTEjYqaUq5rUfNTwwJy5/tBsC6EHUhR9S4y5NHB18k4pL2dXSqpNhZM2pBIJY1drOxI+Xk0V6RpB8OsiSi1qSVcgSTnyd4ZOllC07pNTJJDUgJcuS9syBnfg7xn0uSOO78srPFzqhlENbXPuvBStIJAUDru3YuxDC/A+MNTMSHF8w2SVXPBTahXlHQ+sVbejJdO/Iymzi/drCazi75c9YIiYQLJDZgqKktYkOySAB+nERwKV7tOpZr8cwq191yMxyjOfVyd18FxwLyNUkkbt+GX00OCHAbXwOUcVLUPeITexbn+JAv2Pe95Q91yhLdt5R5FajkMqQojiGbUcIxl1MpWvZccKVBZCS4exdvG+T2zjuybrTUxPVqdmAcTCl6WHBo5h9mqd0yVPqUy6SeJekN/+jErB7Omy1gqC9UkrUkkPvZXOYaM5uU5an/BcUoqkPx82YibIEtIoWtSZjC4HVqUk2yFQDnmBrE0OePzh0+alNLlKbnNuHOG/bUnsl/8IKvgIWleh2RdiYeaiUlMwkkKmZlzSZiihzxpIjm1tlievDqdjJmdYLO9mKeQO6X/ACxMRPVpLX4ppf8AiaOTFLAcoADgHevcgaA6njGiT5oToJiVshT2b1jISELACVmWEgMLlSt4qqDl3zF+bHK+pxSk0mtNYHu0vvWAziPhp3VqpmISlzYhIDOzD5RLVsa2RUIBIYANkQmog5OLAAizBxYd7Q8YNar9WvwSAMmPa4izcI1qS4jjjUiNPp/JGr4M2jZs05pZ+K2t3Jh83ZpSAqauWkAuCalMWZw7NbhGgUpg/CKkSjOHWLNlA0AGyblIfm4MDghpnJOyQQGmhtKUJAbTjaFEKViFSlFrg5pOT8eRz4O/lyIbitmgtm5xs8qQmhTBTknVkguO+BSpRlMpBOlYd3cgP/iEPRJ/uwrNVZI/xEMPWJmOkJASwAdSQwsO0NI00+TC96Dz8UmWHWoDg+v6w6XiEzA6SFDwP9Iqdoynnh2yFIORF3bx+UOwYpnBsylVQGTBmJ5vrzMFsdDJ65a1bsiUQMypCXVpbUd8SJWzMPNS4lt3KWliCxDBTQsDgipBNQHJnyD5vbMwOdMWEBKTSVKmEnkF0/ExNe0NP0dmdGZByqT/AAm9r7yTew8hEFex5VQlidm/aS44NZQD+Gp43ssGtSFAFRUlTjeuRYnPwPpAMNhDQ5SabOeLAAls83v8oWlPwO2vJXzeiStFp9U+rHn5mI87otN1pV4hXN2UwGujC1rCL9eNUAhCQ6qUlRVxIHmY5isWoy2ehTspuFJVY84TjEpNmbxOw51LUKLfhbMHJpY8OI8IhTcFMSwUCNQ4YuGvv+eTi3jr9nChQCVbpdxzZ35ZRLRtBKlAOQ7sSCxPB4WkeowhlqULs4v+I58gB2bsMzYaEsnB2BRkdd0cxx/Vx3xtcTiFrWRSkhJyUHruQRla7t3RKGDw5SFdWhIUAQwCTe7Wa8Ci1wwcl5R5+QFkbqs7tlqpnLMLH1Hd1S80lCs301sxIJtaNjjNmyEnsKc5AFR78yeURl7GlJdnbRy2fcBEVJuvRSaMkgEhLAOm9Q3gWB0sdco5vPnTxCQBYOAWUCCcrafDS4vCJSN2WCblyHsO+CdehKQogJfQD0tFuN8i1VwZhODWrJKj/GH5WsO8cxBkbFmEuEX4kJB1sSGLAG1tHvGixJqSAMlByfy/u4geFnFMveuxIHE5NBoQamVI2FMOZToc3yyLs9odK2OkmjrACNAD8yxb0fnFtJxRUFOGKQ7O4a7Xivly01oZ3cEnk4JJ45nzh6YithkbDlj3lH+EfAQ5eBkoDlJVkwKlFycgztCxXWEqKVABL6AuRn4P8DDBPrEsNvPccCUrDfHyg7V4Dd+R+z6KilcqWlWYISCCOX18wLBU9KMylL9wiBh0q6zfTSQkjMH8IJ+ERcTLCytSrsSkZ7oS4Hg4fxirpCqy4xmMpQSLmzcHNhGdCVdYhSlElSjVwsk5cr89MtZuFf7Nf8QA/jAHll4R3G4SiZKuVPfIW3APnBvIfBKEsFIJ48ORhE2gS0qNsmOUD6vRyYpNoKsccQ3GATsRUmkHVOXIiDCWng8OlgCJbfsdI7KSLuHLW5EqSH9YqtpF2BSQeaVJdlAA3SOLeMXuzz94PD0WmKzbZ3k9yv55UFbMA+0VkChBAUtVIJ0dypXgAYrcRsqWASCa83J3nOuVs4sNqyVKAUjtIVUOeYIiumbQVM3USjWe5vE8s4bdPdAibs6cVyXXmKknw/Zo5s7D1YdJKmbg/wCNfMfRg2Fw3Vywh3IBc8VKJKj3OT4NC2T/AOGSeQPmqZDS4EUGOBBP+Ip4Zf1jsLaj7zf+ar+VEdjLIu4a4Nx9tTNCJsgFaeT5uCQeBtrxgpxJWpIUgpAINzzEUHs7lFPWqexIDcxd/WK/2u7eUjZ6JmHXZeITLNiykpE0qF2dJUgXFiMjd425MHSZfba6UYMbrGcQf93knia7AjueJ2xsXh5iCqQRld+1bjy/WPJ9j40TgAQy7uM7jOLXBVomI6ssokDvcteMlkeqma/TVbHpOBxiEopKgC3yA8Y7MQjqapkwSwkrVWSABUpVi5a/yESZGFlkB0p0yt3x5B/bJxrrqJDmlLmlKXNkjTg+sXOWlbkRjqex6vIlAoM3rBMZKqaQw7Jc97WiSlYEln0a3fHmnR7HzZUwS0upC3SUvxBduFn7vON9tPCy5MqZOJW0tCphAIuEpKiMoIyuNoco09x+IwqrKSmoFKQRkxAZ/h5QH7AoTJcxTC5BTnulJa/F489x238TPUFGYUpF0pRZI8PePNT+Ea7oztpeLT1ajTMTerub68/GIyjJ7FOMkjR42VUsAAOUqHoQPjEFKqmQAanFm7N8zyEQukO11YIJUppq11BCchal1HkHHMk+IotidOpvWU4gApUbUhgHyDfq/PjFOSumJRdbG1kYVJrWcwuYxc6LU3KIipYJRUAWlpYHJqQ5Hi/kIJJmTil0ICkKdQNQdlF8uMZvaPTbDpXLkpl9aEgBa/dDAAhOqh+bLJqoG152EkzVYaUVAMbJqY52dQb4jwiBtiSFEJOW8pnZ2YP4PErCbVStlyklSChI3Q4Hata2TecVXSfakmSCZoBYg93K13PCE0hqx2HllaGqNpYIOt8s+Q9YjSl2q7PaCSeAUQfAsk+MO2dtlE+WZuHBUlQpNiChQd0qABZQcWyIuCzPG2zt1EhAcAkMGId1DQA6530hFFjs+ReWlQcUKsfD5QxaWTuhwlZtyYg/H0iJsnbgxIC5SWmJBC0KI3amuD7wsb+bR3H7S6hBqO9mWuz5MOJh7CHlO5MIcApYPnYF/lEzHH+6HBPzTGSwHSslapc0ClQIB95DhnUdRqWuOcaGehaDWspISGYO7OLZcQPWBO+Aa9gjJmBSgEgg3BJZnufifOHYPCBCpaXc9ZUTxNKh4WjKbd28VLprp5j3e7h35+UWWxdprmlEmYreuULGZ3SSk+AJChw1eJuN0iqZpJxece5X/wAcQNoyUpLmcJQVdQPqRw74bi0/ZkmYCSVWvkHY1Hy9RGEXtcYiYUle8d4JJuocf20ipuluhRR6LOlhMoBPZBRTq4qDHm/HnAsfiEqnSQD7qvRKYxuzsYuSQlz1RIrQ9mdyRwV3ZxtJ2EShaGz3nPcIIy1boGqClLnOKLbO2BLcIdSsrceA0J5mw1i12ftBE4qSmoEWuGzs8YHagCZ8wOo0LWhLJUbIUU6A6iBvaxpD9jdPVCcqTjZQlh2CwSaXyr4pP40t3aj0Chz9GPKukshM6VUhMzrUCw6qaAU+8lylm1HMc42Oxtork7Owq2dRlpTfQI3fRgIptVZKu6NOhYlmtVgB/wBSYpdpYoTFApyZTvY3KCPDdOvDOLXZU7r5dZT2kqcEOHCm+IMO+zWZASFEMmwz09YEr4HdEXa+05cgKVMUBmcwNbOdB9B4xmJ6fTSt5EtJQDesK3hyuCDz/wBMV/SJPWSVqX2kkKvm70l+bExXYLD7sRlyOC2NIQT5PQdjdK5M9kqeTMOSVndJ/KrI30LE6AwbBTpyUUdUoBgHIOlR1Dax53NwwuM49E6JYla8KgrU6hUkk5kJUQl+JZh4QsWT6jpinHTwQsTg5qx2DdRUWY3IA1I4cIUaGXJrLORruljwhRtoj7JUjLbI2hiJSpSMNMUUzSuoqCVtSLFizXtbhGV25tmfNbDdUhWHlTSpJUFKVUHSo3UXS5UQOcauTJJ2jggLBKMSttOwhPzjyybMPWzFC7zF55dsmFBOjCctzWdFFKmYiaGopSC6UgEuSMlVBu4CLrGTZsmqaFJX1YrSijeLZBwpnq/LFR7Pw6lrIAJSoFrCywB8DF10rV1eFnTU2WEpZWvbS31yEZtd2xrq7SyxfTlaU4fFrkhLVJTLSpRrqDEEqlgoZncA3DWzjFdCgHUlCVJKUmy1BVivklLRO6W4lQ2dswqFSlImLL2uoIU9h+b1iB7O1FU2eTolA01Kj8ouce1kwl37F9/bSsIpOIny0hCFMaFlSt9CkZFIGRJz0jU9MOnWHOBmIUidLVPllEpxKNRULFkTSWGROTtxEYzplN6mSFpZzOB3rj+7mAhuDRD6fSAV4RKrFOGlHP3nU58W9IMfAZGTtmrIkhQQpYJOVIItqCrk2caLoZ0hw8ifMlziqXMVSQkpKjTSGG5VqonhfjFF0XSZmCQSS5r3hnaaoD0DQDZaEr21LlqQkusEqPaYYUmnusD3xEI1JpGknaRpPaBtmTiMRhkyJwUUCbWkBbirqiARTYkCM5NmoNJBIHWSgokKTumagLuR+GrmdLtFFshZ+39qoTJs0l+ACiPgBF30slthple8krl2yt1iHD8+MEo96FF9h60Ns4c4VZl4iSSJazuzEFjSSAwNu6PHcpbukEgajhELbE4y8BgSkmlf2hRSSTuy5gTKTfRKVNFjipAXIlqKElVKFB9CQMjprBljdNjxPmj0z2YygnCIYuXIUxdmWqlNsmSQW5xkfajJP2iWEGoGtSkgvSs09oDKxcP+ItFZ0ZwYmqxIfsDDBJZLgzZpQo3B0AtyjO7UK/7RnyFL6xEtRSHFgxQHYksdD3DgIqrjXwTdSs3vsnlqBxgILfcMDxee59B5CA9OpSROSUqSRQTTUHSu1SW0JYHxjG9FqZu0JchICUzVLlrNKTZIWQQNC4z8ItZyeoE5aWeXWXYCyKrgZP8AOJktlEaabsuPZw/2uYVWHUKu4Z+tkt84uun5liWhSVp6wZpcB0nrKVXtmlQ/pHkuEm/7VKmJAQ6jUSkKrrIBSrvch9HeNxtrZ0rCjEMGDuogBy5BcsA+cOS0rSKL1OzF7aE80mWwpdRImIBcZe9fW0e8z8dIANcyXSEqqFQO6EmqwubcI+dtpSKyCBQh94hnYm6m1LR6SvZEtWHExSUOhrUgv93a/IsctIp9iSEu5tmP6TpUVTZctaP7xaSVLQg0BSswoggkNbvEXfs7xSJRlJnT5IKFLCT1qCKDLLXdhckeXERj1TJC0pJmzKiHXutfKzDJu+NZ0IT9wQi8utZCib1NLs3z5QSVREpXI9E2rtjCKlTJasRKUVIIZK0KU96VAAuzj0jxDZ2zJip6JiZ8ta6gtkCcpTAhwAJZLNbheNZ0xwolCQp1K60Lcbu6EFOT/wCLWMlIkmVikmQqYmWVoQ5WAVJUU1JLZgnSKhuhT2dG2nbSlOLkOoAAiklyBkpic42+K2/hAUEzgQpwGStTuMgyS9njNpCyVVsN40sc02Yngc7RksTPmnZpmomKBTPMtJqIUGpKWL2ZlNwtGWP4RpI3WzNoypU5agpXVE23FqUQAC6gEOgg1PUzhuBMZ3Hz6p01aEYhSVTZpcBCReYo5L3vTSLfYmEKpkoqIaZhRNILl5jpL2ZsxFdg1qCRWQVcuGkDY1TK+didyYSjEopQpRKgAAANC1KjyeLTo7jZCJEsTq5iaQfuxUHUA1ZDMsAUtexHGKDpDgneYtKC5YGkEsGpdwW8Iu9kbNSZWKSlKUAyS1KUjeAN2F/w98PVwhJbmgndNsNhrKk4hKaSB92OXPxMOxPTBEtlHDz2B4IswJvvPoYy23U04PBLSzrwxUokDNKZRH8xiFtyWn+xJM5JUCZlL60usAcdBrFJsWwbaOO69E+YZK5aFb5VUADUpzSWOvGIEjaGHSyKxq7zE2bQ7ucCx+DSACqXLcqRknQnycxYp2XJJYSJZUfyJtzNrRnkcXyVFy8EeZtORf72X/E8aPo/t1UlAw/VBawFLKgtKARWMgokvvCwf5RSDZ0gKKTIlAjQoTlyteK/bUxsXhGa6wH5FSUn0Jicdau0J3W5scZ07OGUCvCquMxMQoXJtbXdMKM17S8FJk4mSkoMxJklZuAaytiSQA9h6xyOqKtWzGUqdI0XR/Gle0UFSQKMPOLAv78rkI8pwblIN87+ce37E6NmRNK3CjRQ5uQKipTaMdz+GKLa3s7kbglLVJUBcgKWFmzVAqAB13WF4zxSdbimt9jN9DMZ1csqZ3qAz/GTEnpjtevCTUUi9FwTpMSeESujvQ6ahK0zpiQkNSUOSQSXfIDjrnFptToKJsgpRNIUoggrIpDEEggX48IzayfUvxZrcNFeaM/08UBg9kgf+lc+KMP+hir6DY/qlYjdd+r1Zmq5c43vTLoTNxUvDpkqlIMkUiszAAhgAkbqnyFzwjP7N9mWNRW86QKqbpMw5Pxl842k7i15M4bTt8FX042oJshIAb7x+OSFjhziX7RFj7WgcMNKHjVNi3x/sxmKEoCaFATAZgVUApHvUslwe865iJfTXoPiMRNlzZBlpIl0LrMwOxNLClWTnzhQdLceTduig6MbaRLwkpBQskV9kJY/eLNnUDrBeh89MzbiZgcAVKD52w9BfTWC4H2c4oBImzUAB3oClak2cCLTox0MnYbFzMQpQWKSmXYg7wAU4ZnswYnu4JOpMuW8UYLYuKSnFSZhyeY7cTLUPiYvOl21ELwxSnMqR6KB0PKJK/ZliEzk9TMSZQB7ZZbmoNYEGxF3GRtDtq+zXEGUEyZoUpwVBYpTarJio8NIb3kmKO0GvJSdLABgNmD/AIE4+ZlmLRW1JXVITUXoQOyrh3Ra9J+gs+dh8NLktVJSUb5tQQOCbqLDhr4RpPs8xBlGpSuttTSU9WGDUly5B42b4rI1JBj2bJXs/nBS8UQbdZgE6j/fLOsZLHzR/amMWTbrZofumftG46J9Hp+ElTusSlU1S0TAAsMepIVLS5TZy4OcZja/RHFqxM6bJljq5qusZagFArZSxcCwUSByaGmroUk+UQ/Z7fbGH5zJ6h3UTCIsds41HV4oVJciaGfU1BoJ0H6OYuTtBGImyqUSgspYoUCVJMtnCt2yip/ytrFXtzY+KTMnpTh5sxJUqlSUFlAl3s/dBKnJCjaT2KjZoedhxe86UP8AWmN97Q8WlIxKKwFFSUAOHfdLN3AnwjEbC2biFYvDBciZLCZiVkrQsBkGsjs5kAgcyIsfaWFJxalG6VFMwMDYKQE3cWIKT/EL6RU0nJIULUWUmNUerIe7cM3j1Na/9iWpwwceIlGPG52OCklN43iiTsiaWzmKmM47DUOQ9rhmz5Qsi4DG+TBp7A7o33QFTYIf5i/+mMVsfZ8zFLMuSpAKUVb5IBAKUkBgb39DGlwHR/ES0CWTJYEuQtTsToKOfGIz5oR7W1ZeHFNu0nRZ+0JZCcEzdmcb8PuoyaJn3kq4/vJf86Y1+39jKxCMMlM2kyZZSSUvUWQCRf8ALGY2xsZWG6oqmpXVMSkCgpI1Jz7vOIxdVhlUVLcrJ0+VbtbHoS1XjGieE7EmghyrEEpPAhaSfRx4w7Gz1S1lBmlRYHdXMa76KCS/hAUJB2EonMTnHisAxeLiwypxlpezVnoOxxfD8sG3on9ozM+YRlwSB4m/oI0uy5jLlcsJ+kYDAYwmWXUSbBzyAgStiTpEzbSycOH0PpF70dXbFf5CfXrf0jNbYm/cgPxPwiz6KYgkYy7tIRn3T4bjumLVvRN27IP2HA8BhVPy3ZAfzI84qtqD/u7I/wA0fzTIvekSyMDhR/7Uj1w0UG1Vn/s9IH/FT8Zhhp8fmS1/BExUgIlppe65ZOWZvoB+sXSsRRLBBYqPjkYocWs9SxU+8hjazeEWeCMgy09ZMllTVF1pCg92Z3DCzcoFG92NSrYlddUhzcpIY63sYz+2i+Lwf+Yn+dEFGJ3VKRYEghwSwKt0Fy+XOIGLmqVisI7f3iWYN/vE8zE6KnfwOU04UaL2wFsRhjxkn+eFAvbH/e4X/KP80KNobxRjk/EbrDbfkp60oUtRloCiKSLX/EznO0Ux6aS1BqFBgLlQBOmV4iS5YbFMm6kJTZy9ju8zc5cYpU4IJsUEAC26sXtxHzjeGOL5M3Nrg1kjb5XLKpaWB4315NELaPSCchD7meoPP80RtjpaWxGvAi3whm2EBSEhh2u7QjOM4wqTv2bZJqUVXotOlW2JwVLSlYTuBRtxLavwiBgNpT1g/e1M2TfKF0nNc16SWQkDIWcnjzgGyhSghmvq3ARpS0GSb1ErGbdny6Q6c9Rwbm0Wm0dvJ64pmTUJpAF1BJuH1UOMVSsVh6kCZhq+bg6jQsPWL2Zh5M1aliQKuJQh8hrcxLr0XbDYZYUApEwkcQoH5wkzCSQFq7t2JEuWQAGbLQN8IHLSQSW46Z+cZjOJnLTas/XlDMTiJjdsDuURB1E/TQDEJJA48AP2gGSMfjFtLZRG67g8fDlDBjlgN1h8yflHMXKJCeSRrDVA8SPGCl6BNk/Z2KUpJBWXKgnPJw5ismYhS1FImMl7B7Wyix2Yhh2vffN/dIiuMkuf2hJb8DbJ+CxajN6sqqDEXAzGuXARBmbTW5KShns6RlppBNlSWW7MKVDR8vSAKQaWfzphKKQ5SvcPhNoKUtIUEEEtZLZ2GnGD4vGBCilIS2V+sz1yivwUk9Yg2soaDjBdoJLneHaMPSrFex1eKlq7SZZ/5Znzg86XJMgihFJtRSyDe4pp7/GK0I5+v9Ynz0AyhfU8/lCcUNNlHitkS1pUJEqTJUUkFSEspuRCOLHwEOxez5inpCQoZKCppY6kAgJNnDM3KwabKQElw/DIj5RLlJcOX9R8RGWTCm+DbHlaXJRJ2VOJJK2H4QgIGnvUFXmTAcd0dTNKTOUncLoAUbHdfJDKyGkaXEJpIarJ4jrQVEWNjxTyiI4EpXpot59quzP4vojIWp1TpiVUpFqGYd8tx9WEXMvYCfsqZFYMsCWHN3CVJN0kUl2a/F++dMkkl2t3wObhElAUqWgqslzmACSA7OACT5mN446ikZ5suvI5PyTcHs9XWuVZSwGYHU8ssrfljz/G9C5qH6jES5gJUaVJMqnJmaoHyA+W2nbFkKLqkIVSgEO+cQ/7Kkkf3Sg9t1czL+OBRa4E9DW7f6f2YrFdF8fRT1cteV0zA4Due0EgxedC+j+JlyZ/WymVMdIBDmkAgAkFhmcuOcWo2NJT2RMD2sbeoMdOw5agqpSiAHZZSofAN3/0gkm1wKMcafL/AE/sF0k2VOVhgiXLqKU0JSXSQmpNQBUpskozf4xF2xsEq2b9lQkOkJUhDkELGbqJuLq08s4sRsRMlO5NUkKDsmlPwHrBJmBWJYV9rxF7NWlvVJiFGSNGsbf4v2/6ecTdi46hjhFEuOytJy5BRLwOdhcSlnwc8Zu0snuy8Y9LlyljOdMUeZT6sgQR16UnwB+Mab+jBxivJ5aiZMAWFyJ6AWuZatC/CGbLl/acbh0oJZJqelzuPMZrZ0tnrHq4UvUDyb4GFS6g4DsdVcOIVbygaYqXsxntdlmZLw8+4peVSRm7l3ct2TbnCjY4vBrAAaU2bKExXHiefrHIItpVRbxxe+oo5aFUrZNlUs93bN4gY6uoigP3AiNIg2sT9eEQlguS1vr8p+MdEZNHI0QMA4R7uegb6MSZGz504jq0nPMi0cU3A+X9It9h7UVKWApaqNRc/qfKB+yluPxPRWYtyZqkgtZAf429Ifh+iaAN6ZNV3sPgBFxiOkmH0Us8whXzaFgtpS5z9XMuMwpN/rxiO6iqRCw3RyWCClAcakBR/wBTxNxeAI1YHLSJ8tavxeQ/eHrc6+domx0VScDk6iPARIkbLSxdRJ00+UFMknIEdxaCAKFgonvvAgZFxOzEgvck8z+49IBL2SSW3m8P0iatC7MWtode6OyUKzPmf6w3sEd0BxeykterQXU3wIiGrZzZAfxNF2s8wX+uMC6tJNqB4QiwOFwKQHA5vWo38zECfgk1FwnxUo+hYCL2Wm1x6GIsxN828CPj+kJAyJhMMkCwT5/tDFSE/hT/AKPkXiylotmfSI05H5ifHKGBHw+EALhDdyf1MdxCb9k+X6RLkIA4/EQ2fJCr2P1wIgAr0y73HmQPm8TZkl0s48P6x2VJv2U/wv8AAwaZLHAeTfEQxFUrCg6+pg0nDWb4/u0EUBx/0n9W9IkSJfce4gfpDYEPF4N2e9uDxGRhQCN0+DCLeewzHqP3iKCnl4/Qg2DcCqT3+Y+YgapG4O88P0iahSdAD9d5+EPWgH3fT9GhbDA9VdX+EcIjGSdPURZJTmwz5H/7QAy+Nu/94EgIK5J4Dy/aHpkbq+LaN+kHVIHEHu/YQ8IZJ3s+8fGGIDjpYZI/KIFPl/dIAIzifOGV3tx/aGzUilOUJIZVqR9fRjhlPmAfOLAhP4R5RwywdPVvhFCK5GGB5eRHrDzhLiw8AP6xP6l/oxxWFLvfygER9qyXUm47IztHIl42Q5HdzEKBLYG9zMCWGBYeUVGO7R74UKGjJg5QziZILBxm8KFDGiROUYndFj9+e6OQoTK8myhE7x7oUKMihk05QUjKFCilyD4InvGH1EGxbKFCiXyOPAdWURpaiXeFChFIMjswxJzhQoEDGqygZN/KFChgSZKQcxA5ozhQooQOQLRyeo3uYUKJkVEiLyfWC4NZJuSYUKAET5spJF0g+AiLLQOAjkKGiWGpDi0PmqINjChRQI5h1E5l++FChQ0IarSGTAwtaFChMFyESHPlAcYohmLd0chQLgPIYR1YjsKGIhT0ggghxHju2VFGIVRu77btrOLW0hQo1xckz4DdKdqT5apYlz5qBR7q1J15GFChR24EvpowyvuP/9k=" alt="Al-Azhar Egypt" />
-    </div>
-  </div>
-</section>
-<!-- ================= SPORTS CLUB ================= -->
-<section id="sports" class="py-24 bg-white">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold mb-4">Sports Club & Youth Activities</h2>
-      <p class="text-slate-600 text-lg">
-        Isboorti, midnimo & horumar dhalinyaro – si gaar ah loogu talagalay Soomaalida ku nool Masar
+  <section id="logistics" class="py-24 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-6 text-center relative">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Our Transport & Logistics Services</h2>
+      <p class="text-lg md:text-xl text-slate-700 mb-12">
+        Warfaa waxay fududeyneysaa dhoofinta & soo-dejinta alaabooyinka u dhexeeya Masar iyo Soomaaliya iyadoo la
+        raacayo sharciyada ganacsiga caalamiga ah.
+        Waxaan bixinaa adeegyo dhameystiran oo ku saabsan duulimaadyada, maraakiibta, containers, iyo gaadiidka
+        xamuulka.
       </p>
-    </div>
 
-    <div class="grid md:grid-cols-3 gap-8">
-      <!-- Football -->
-      <div class="bg-slate-50 p-8 rounded-3xl shadow hover:shadow-lg transition">
-        <i class='bx bx-football text-5xl text-blue-700 mb-4'></i>
-        <h3 class="font-bold text-xl mb-2">Kubadda Cagta</h3>
-        <p class="text-slate-600">
-          Tartamo toddobaadle ah, tababar & is-dhexgal dhalinyaro Soomaaliyeed.
-        </p>
-      </div>
+      <!-- Slider Wrapper -->
+      <div class="relative">
+        <!-- Left Arrow -->
+        <button id="prev"
+          class="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100 z-20 hidden md:block">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
 
-      <!-- Basketball -->
-      <div class="bg-slate-50 p-8 rounded-3xl shadow hover:shadow-lg transition">
-        <i class='bx bx-basketball text-5xl text-blue-700 mb-4'></i>
-        <h3 class="font-bold text-xl mb-2">Basketball</h3>
-        <p class="text-slate-600">
-          Kooxo dhalinyaro ah & ciyaaro saaxiibtinimo oo joogto ah.
-        </p>
-      </div>
+        <!-- Carousel Container -->
+        <div id="carousel"
+          class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide space-x-6 py-4">
 
-      <!-- Fitness -->
-      <div class="bg-slate-50 p-8 rounded-3xl shadow hover:shadow-lg transition">
-        <i class='bx bx-run text-5xl text-blue-700 mb-4'></i>
-        <h3 class="font-bold text-xl mb-2">Fitness & Health</h3>
-        <p class="text-slate-600">
-          Jimicsi, wacyigelin caafimaad & nolol firfircoon.
-        </p>
-      </div>
-    </div>
+          <!-- Flight Cargo -->
+          <div
+            class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-green-100 to-green-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+            <i class="fa-solid fa-plane text-4xl text-green-600 mx-auto mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Flight Cargo</h3>
+            <p class="text-slate-700 text-sm md:text-base">
+              Dhoofin iyo soo dejin degdeg ah oo diyaaradaha xamuulka ah ku habboon alaabo muhiim ah.
+            </p>
+          </div>
 
-    <!-- CTA -->
-    <div class="mt-16 text-center">
-      <a href="#contact" class="inline-block bg-blue-700 text-white px-8 py-4 rounded-2xl font-semibold">
-        Ku Biir Sports Club-ka
-      </a>
-    </div>
-  </div>
-</section>
-<!-- ================= UN REFUGEE UPDATES ================= -->
-<section id="refugee-updates" class="py-24 bg-slate-100">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold mb-4">UN & Refugee Updates</h2>
-      <p class="text-slate-600 text-lg">
-        Warar & ogeysiisyo muhiim ah oo la xiriira Qaxootiga Soomaaliyeed ee Masar
-      </p>
-    </div>
+          <!-- Ship Cargo -->
+          <div
+            class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-blue-100 to-blue-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+            <i class="fa-solid fa-ship text-4xl text-blue-600 mx-auto mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Ship Cargo</h3>
+            <p class="text-slate-700 text-sm md:text-base">
+              Dhoofin badeecooyin badan oo badeed ah, adeegyo ammaan ah xamuulka culus iyo ganacsiga.
+            </p>
+          </div>
 
-    <div class="space-y-6 max-w-4xl mx-auto">
-      <!-- Update 1 -->
-      <div class="bg-white p-6 rounded-2xl shadow">
-        <div class="flex items-center gap-3 mb-2">
-          <i class='bx bx-globe text-2xl text-blue-700'></i>
-          <h3 class="font-bold text-lg">UNHCR – Diiwaangelin Cusub</h3>
+          <!-- Container Carrier -->
+          <div
+            class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-yellow-100 to-yellow-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+            <i class="fa-solid fa-box-open text-4xl text-yellow-600 mx-auto mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Container Carrier</h3>
+            <p class="text-slate-700 text-sm md:text-base">
+              Gaadiidka containers badda iyo dhulka, ilaalin buuxda oo alaabtaada ah.
+            </p>
+          </div>
+
+          <!-- Truck / Land Cargo -->
+          <div
+            class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-red-100 to-red-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+            <i class="fa-solid fa-truck-fast text-4xl text-red-600 mx-auto mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Truck Cargo</h3>
+            <p class="text-slate-700 text-sm md:text-base">
+              Gaadiidka dhulka ee alaabta culus iyo ganacsiga, gaarsiinta waqtigeeda.
+            </p>
+          </div>
+
+          <!-- Warehouse & Storage -->
+          <div
+            class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-purple-100 to-purple-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+            <i class="fa-solid fa-warehouse text-4xl text-purple-600 mx-auto mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Warehouse</h3>
+            <p class="text-slate-700 text-sm md:text-base">
+              Bakhaaro ammaan ah oo kaydinta alaabta kahor ama kadib safarka.
+            </p>
+          </div>
+
+          <!-- Custom Logistics -->
+          <div
+            class="flex-shrink-0 w-64 md:w-72 lg:w-80 bg-gradient-to-tr from-pink-100 to-pink-50 p-6 rounded-3xl shadow hover:shadow-2xl transition transform hover:-translate-y-2 snap-start">
+            <i class="fa-solid fa-people-carry-box text-4xl text-pink-600 mx-auto mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Custom Solutions</h3>
+            <p class="text-slate-700 text-sm md:text-base">
+              Xalal gaarsiinta alaabta oo khaas ah, iyadoo loo eegayo baahiyaha ganacsi.
+            </p>
+          </div>
+
         </div>
-        <p class="text-slate-600">
-          UNHCR ayaa soo saartay ogeysiis ku saabsan diiwaangelinta qaxootiga cusub &
-          cusboonaysiinta xogta qoysaska ku nool Cairo & Giza.
-        </p>
-        <p class="text-sm text-slate-400 mt-2">La cusboonaysiiyay: Jan 2025</p>
-      </div>
 
-      <!-- Update 2 -->
-      <div class="bg-white p-6 rounded-2xl shadow">
-        <div class="flex items-center gap-3 mb-2">
-          <i class='bx bx-book-heart text-2xl text-blue-700'></i>
-          <h3 class="font-bold text-lg">Taageero Waxbarasho & Caafimaad</h3>
-        </div>
-        <p class="text-slate-600">
-          Barnaamijyo cusub oo taageero waxbarasho & caafimaad ah ayaa loo furay
-          qaxootiga Soomaaliyeed.
-        </p>
-        <p class="text-sm text-slate-400 mt-2">UN Partners</p>
-      </div>
-
-      <!-- Update 3 -->
-      <div class="bg-white p-6 rounded-2xl shadow">
-        <div class="flex items-center gap-3 mb-2">
-          <i class='bx bx-bell text-2xl text-blue-700'></i>
-          <h3 class="font-bold text-lg">Ogeysiis Muhiim ah</h3>
-        </div>
-        <p class="text-slate-600">
-          Fadlan la soco ballamaha UN & NGO-yada si aad u ilaaliso xuquuqdaada sharci.
-        </p>
+        <!-- Right Arrow -->
+        <button id="next"
+          class="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100 z-20 hidden md:block">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
     </div>
-  </div>
-</section>
-<!-- ================= DONATE SECTION ================= -->
-<section id="donate" class="py-24 bg-emerald-50">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    
-    <h2 class="text-4xl font-bold mb-6 text-emerald-800">
-      Support Community Welfare
-    </h2>
+  </section>
 
-    <p class="max-w-3xl mx-auto text-lg text-slate-700 mb-12">
-      Your donation supports Somali communities by improving access to
-      education, healthcare, housing, and essential social services,
-      helping vulnerable families build a safer and more dignified future
-      across Africa.
-    </p>
+  <!-- Hide scrollbar -->
+  <style>
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
 
-    <div class="grid md:grid-cols-4 gap-8 mb-12">
-      <div class="bg-white rounded-2xl shadow p-8">
-        <h3 class="text-xl font-semibold mb-3">🏫 Education Support</h3>
-        <p class="text-slate-600">
-          Help children and youth access quality education, school materials,
-          and learning opportunities.
-        </p>
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+  <!-- Slider Script with Autoplay -->
+  <script>
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    const scrollAmount = 320;
+
+    // Click arrows
+    nextBtn.addEventListener('click', () => carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' }));
+    prevBtn.addEventListener('click', () => carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' }));
+
+    // Autoplay slider
+    setInterval(() => {
+      if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }, 4000);
+  </script>
+
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="py-24">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-bold mb-6">Nagu Saabsan</h2>
+        <p class="text-lg text-slate-700">Warfaa Travel & Trade waa shirkad casri ah oo si gaar ah ugu adeegta
+          Soomaalida ku nool Masar kuna dhisan kalsooni, khibrad, iyo adeeg daahfuran.</p>
       </div>
-
-      <div class="bg-white rounded-2xl shadow p-8">
-        <h3 class="text-xl font-semibold mb-3">🏥 Health & Well-Being</h3>
-        <p class="text-slate-600">
-          Support essential medical care, preventive health services,
-          and community health programs.
-        </p>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow p-8">
-        <h3 class="text-xl font-semibold mb-3">🏠 Housing & Basic Needs</h3>
-        <p class="text-slate-600">
-          Assist families with safe shelter, clean water, sanitation,
-          and basic living needs.
-        </p>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow p-8">
-        <h3 class="text-xl font-semibold mb-3">🤝 Community Development</h3>
-        <p class="text-slate-600">
-          Strengthen livelihoods, social protection, and sustainable
-          community programs.
-        </p>
-      </div>
-    </div>
-
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-   <a href="#"
-   class="px-8 py-4 rounded-xl bg-emerald-600 text-white font-semibold flex items-center gap-3 justify-center hover:bg-emerald-700 transition">
-   <i class="fa-solid fa-hand-holding-heart"></i> Donate Now
-</a>
-
-
-      <a href="#contact"
-         class="px-8 py-4 rounded-xl border border-emerald-600 text-emerald-700 font-semibold hover:bg-emerald-100 transition">
-        Contact Us
-      </a>
-    </div>
-
-  </div>
-</section>
-<!-- ================= END DONATE SECTION ================= -->
-
-<section id="furnished" class="py-24 bg-white">
-<div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold mb-4">Guryo La Diyaariyey (Furnished Houses)</h2>
-<p class="text-slate-600 text-lg">Guryo diyaar ah oo casri ah – ku habboon arday, qoysas & bukaan socdaal caafimaad</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<!-- House 1 -->
-<div class="bg-slate-50 rounded-3xl shadow hover:shadow-lg transition overflow-hidden">
-<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688" class="h-56 w-full object-cover" alt="Furnished Apartment Cairo" />
-<div class="p-6">
-<h3 class="font-bold text-xl mb-2">Modern Apartment – Cairo</h3>
-<p class="text-slate-600 mb-4">2 Qol jiif • Fully Furnished • WiFi • AC</p>
-<a href="#contact" class="inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Book Now</a>
-</div>
-</div>
-
-
-<!-- House 2 -->
-<div class="bg-slate-50 rounded-3xl shadow hover:shadow-lg transition overflow-hidden">
-<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" class="h-56 w-full object-cover" alt="Luxury Furnished House" />
-<div class="p-6">
-<h3 class="font-bold text-xl mb-2">Luxury Flat – Nasr City</h3>
-<p class="text-slate-600 mb-4">3 Qol • Elevator • Security • Near Services</p>
-<a href="#contact" class="inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Book Now</a>
-</div>
-</div>
-
-
-<!-- House 3 -->
-<div class="bg-slate-50 rounded-3xl shadow hover:shadow-lg transition overflow-hidden">
-<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" class="h-56 w-full object-cover" alt="Affordable Furnished Studio" />
-<div class="p-6">
-<h3 class="font-bold text-xl mb-2">Studio – Giza</h3>
-<p class="text-slate-600 mb-4">Qiimo Jaban • Nadiif • Ku dhow Isbitaallo</p>
-<a href="#contact" class="inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Book Now</a>
-</div>
-</div>
-</div>
-
-
-<!-- CTA -->
-<div class="mt-16 text-center">
-<a href="https://wa.me/2014184102" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition px-8 py-4 rounded-2xl text-white font-semibold">
-<i class='bx bxl-whatsapp text-2xl'></i> Weydii Guri Diyaar ah
-</a>
-</div>
-</div>
-</section>
-<!-- ================= JOBS ================= -->
-<section id="jobs" class="py-24">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-12">Shaqooyinka Furan</h2>
-    <div class="space-y-6">
-      <div class="bg-white p-6 rounded-2xl shadow flex justify-between items-center">
-        <div><h3 class="font-bold text-xl">Travel Consultant</h3><p class="text-slate-600">Cairo – Full Time</p></div>
-        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl">Apply</a>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow flex justify-between items-center">
-        <div><h3 class="font-bold text-xl">Medical Coordinator</h3><p class="text-slate-600">Giza – Part Time</p></div>
-        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl">Apply</a>
+      <div class="bg-gradient-to-br from-blue-700 to-indigo-700 text-white p-10 rounded-3xl">
+        <h3 class="text-2xl font-bold mb-4">Maxaa naloo doortaa?</h3>
+        <ul class="space-y-3">
+          <li>✔ Khibrad gudaha Masar</li>
+          <li>✔ Adeeg Af‑Somali ah</li>
+          <li>✔ Daahfurnaan & Kalsooni</li>
+          <li>✔ Kalsooni buuxda</li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="py-24 bg-slate-900 text-white">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-4">La Xiriir Warfaa</h2>
-    <p class="text-center text-slate-300 mb-16">Nala soo xiriir si aad u hesho adeeg degdeg ah & mid lagu kalsoonaan karo</p>
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery" class="py-24 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">Gallery</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <img class="rounded-2xl object-cover h-64 w-full"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Q6iH4OnnIM-OLj9uDVFqVQz4aoyjuGK9_w&s"
+          alt="Flight Egypt Air" />
+        <img class="rounded-2xl object-cover h-64 w-full"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC4GrF6pR0kaDKHttpCZXXg6M9WfLKOQy24Q&s" />
+        <img class="rounded-2xl object-cover h-64 w-full"
+          src="data:image/jpeg;base64,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"
+          alt="Al-Azhar Egypt" />
+      </div>
+    </div>
+  </section>
+  <!-- ================= SPORTS CLUB ================= -->
+  <section id="sports" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Sports Club & Youth Activities</h2>
+        <p class="text-slate-600 text-lg">
+          Isboorti, midnimo & horumar dhalinyaro – si gaar ah loogu talagalay Soomaalida ku nool Masar
+        </p>
+      </div>
 
-    <div class="grid md:grid-cols-2 gap-12 items-start">
-      <div class="space-y-6">
-        <div class="flex items-start gap-4">
-          <i class='bx bx-map text-3xl text-blue-500'></i>
-          <div><h4 class="font-semibold text-lg">Cinwaan</h4><p class="text-slate-300">Cairo, Egypt</p></div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Football -->
+        <div class="bg-slate-50 p-8 rounded-3xl shadow hover:shadow-lg transition">
+          <i class='bx bx-football text-5xl text-blue-700 mb-4'></i>
+          <h3 class="font-bold text-xl mb-2">Kubadda Cagta</h3>
+          <p class="text-slate-600">
+            Tartamo toddobaadle ah, tababar & is-dhexgal dhalinyaro Soomaaliyeed.
+          </p>
         </div>
-        <div class="flex items-start gap-4">
-          <i class='bx bx-phone text-3xl text-blue-500'></i>
-          <div><h4 class="font-semibold text-lg">Telefoon / WhatsApp</h4><p class="text-slate-300">+20 151 418 4102</p></div>
+
+        <!-- Basketball -->
+        <div class="bg-slate-50 p-8 rounded-3xl shadow hover:shadow-lg transition">
+          <i class='bx bx-basketball text-5xl text-blue-700 mb-4'></i>
+          <h3 class="font-bold text-xl mb-2">Basketball</h3>
+          <p class="text-slate-600">
+            Kooxo dhalinyaro ah & ciyaaro saaxiibtinimo oo joogto ah.
+          </p>
         </div>
-        <div class="flex items-start gap-4">
-          <i class='bx bx-envelope text-3xl text-blue-500'></i>
-          <div><h4 class="font-semibold text-lg">Email</h4><p class="text-slate-300">info@warfaa.com</p></div>
+
+        <!-- Fitness -->
+        <div class="bg-slate-50 p-8 rounded-3xl shadow hover:shadow-lg transition">
+          <i class='bx bx-run text-5xl text-blue-700 mb-4'></i>
+          <h3 class="font-bold text-xl mb-2">Fitness & Health</h3>
+          <p class="text-slate-600">
+            Jimicsi, wacyigelin caafimaad & nolol firfircoon.
+          </p>
         </div>
-        <a href="https://wa.me/+20 151 418 4102" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition px-6 py-3 rounded-xl font-semibold">
-          <i class='bx bxl-whatsapp text-2xl'></i> WhatsApp Chat
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-16 text-center">
+        <a href="#contact" class="inline-block bg-blue-700 text-white px-8 py-4 rounded-2xl font-semibold">
+          Ku Biir Sports Club-ka
         </a>
       </div>
-      
-      <form class="bg-white p-8 rounded-3xl shadow-xl grid gap-6">
-        <input type="text" required placeholder="Magacaaga" class="p-4 rounded-xl border text-slate-900" />
-        <input type="email" required placeholder="Email" class="p-4 rounded-xl border text-slate-900" />
-        <input type="text" placeholder="Mawduuca" class="p-4 rounded-xl border text-slate-900" />
-        <textarea rows="5" required placeholder="Fariintaada" class="p-4 rounded-xl border text-slate-900"></textarea>
-        <button type="submit" class="bg-blue-700 hover:bg-blue-600 transition px-6 py-4 rounded-xl font-semibold text-white">Dir Fariin</button>
-        <p class="text-sm text-slate-500">Waaan kula soo xiriiri doonnaa sida ugu dhaqsaha badan.</p>
-      </form>
     </div>
-  </div>
-</section>
+  </section>
+  <!-- ================= UN REFUGEE UPDATES ================= -->
+  <section id="refugee-updates" class="py-24 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">UN & Refugee Updates</h2>
+        <p class="text-slate-600 text-lg">
+          Warar & ogeysiisyo muhiim ah oo la xiriira Qaxootiga Soomaaliyeed ee Masar
+        </p>
+      </div>
 
-<!-- ================= FOOTER ================= -->
-<footer class="bg-black text-slate-400 text-center py-6">
-  <p>© 2025 Warfaa Travel & Trade – Egypt | U Adeegaya Soomaalida</p>
-</footer>
+      <div class="space-y-6 max-w-4xl mx-auto">
+        <!-- Update 1 -->
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <div class="flex items-center gap-3 mb-2">
+            <i class='bx bx-globe text-2xl text-blue-700'></i>
+            <h3 class="font-bold text-lg">UNHCR – Diiwaangelin Cusub</h3>
+          </div>
+          <p class="text-slate-600">
+            Important Announcement regarding changing the system for issuing Registration appointments for all
+            nationalities
+            As of 23rd of November 2025, UNHCR will change the system for issuing Registration appointments. Given the
+            high number of requests for different types of appointments, and in order to streamline the process,
+            specific days will be assigned to different types of appointment requests as follows:
+            👉File Closure: Sundays and Thursdays (all family members)
+            👉Appointments for Card renewal or adding a family member and modifications of existing case: Mondays and
+            Wednesdays (family focal point only)
+            👉New registration: Tuesdays (family focal point only)
+            - Only the services indicated above will be provided each day.
+            - All types of appointments can still be requested Sunday to Thursday through UNHCR Infoline: 0227390400
+            - File Re-opening request submissions are available Sunday to Thursday - at RSD/T building in street 44, 8th
+            District, 6th of October city or via e-mail (arecaapr@unhcr.org)
+          </p>
+          <p class="text-sm text-slate-400 mt-2">La cusboonaysiiyay: Jan 2025</p>
+        </div>
 
-<script>
-  const btn = document.getElementById('menuBtn');
-  const menu = document.getElementById('mobileMenu');
-  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-</script>
-    <!-- Start of Tawk.to Script -->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/694327579eacfa1982eafb39/1jcn53boa';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
+        <!-- Update 2 -->
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <div class="flex items-center gap-3 mb-2">
+            <i class='bx bx-book-heart text-2xl text-blue-700'></i>
+            <h3 class="font-bold text-lg">Taageero Waxbarasho & Caafimaad</h3>
+          </div>
+          <p class="text-slate-600">
+            Barnaamijyo cusub oo taageero waxbarasho & caafimaad ah ayaa loo furay
+            qaxootiga Soomaaliyeed.
+          </p>
+          <p class="text-sm text-slate-400 mt-2">UN Partners</p>
+        </div>
+
+        <!-- Update 3 -->
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <div class="flex items-center gap-3 mb-2">
+            <i class='bx bx-bell text-2xl text-blue-700'></i>
+            <h3 class="font-bold text-lg">Ogeysiis Muhiim ah</h3>
+          </div>
+          <p class="text-slate-600">
+            Fadlan la soco ballamaha UN & NGO-yada si aad u ilaaliso xuquuqdaada sharci.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= DONATE SECTION ================= -->
+  <section id="donate" class="py-24 bg-emerald-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h2 class="text-4xl font-bold mb-6 text-emerald-800">
+        Support Community Welfare
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-lg text-slate-700 mb-12">
+        Your donation supports Somali communities by improving access to
+        education, healthcare, housing, and essential social services,
+        helping vulnerable families build a safer and more dignified future
+        across Africa.
+      </p>
+
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div class="bg-white rounded-2xl shadow p-8">
+          <h3 class="text-xl font-semibold mb-3">🏫 Education Support</h3>
+          <p class="text-slate-600">
+            Help children and youth access quality education, school materials,
+            and learning opportunities.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-8">
+          <h3 class="text-xl font-semibold mb-3">🏥 Health & Well-Being</h3>
+          <p class="text-slate-600">
+            Support essential medical care, preventive health services,
+            and community health programs.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-8">
+          <h3 class="text-xl font-semibold mb-3">🏠 Housing & Basic Needs</h3>
+          <p class="text-slate-600">
+            Assist families with safe shelter, clean water, sanitation,
+            and basic living needs.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-8">
+          <h3 class="text-xl font-semibold mb-3">🤝 Community Development</h3>
+          <p class="text-slate-600">
+            Strengthen livelihoods, social protection, and sustainable
+            community programs.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#"
+          class="px-8 py-4 rounded-xl bg-emerald-600 text-white font-semibold flex items-center gap-3 justify-center hover:bg-emerald-700 transition">
+          <i class="fa-solid fa-hand-holding-heart"></i> Donate Now
+        </a>
+
+
+        <a href="#contact"
+          class="px-8 py-4 rounded-xl border border-emerald-600 text-emerald-700 font-semibold hover:bg-emerald-100 transition">
+          Contact Us
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- ================= END DONATE SECTION ================= -->
+
+  <section id="furnished" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Guryo La Diyaariyey (Furnished Houses)</h2>
+        <p class="text-slate-600 text-lg">Guryo diyaar ah oo casri ah – ku habboon arday, qoysas & bukaan socdaal
+          caafimaad</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- House 1 -->
+        <div class="bg-slate-50 rounded-3xl shadow hover:shadow-lg transition overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688" class="h-56 w-full object-cover"
+            alt="Furnished Apartment Cairo" />
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Modern Apartment – Cairo</h3>
+            <p class="text-slate-600 mb-4">2 Qol jiif • Fully Furnished • WiFi • AC</p>
+            <a href="#contact" class="inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Book Now</a>
+          </div>
+        </div>
+
+
+        <!-- House 2 -->
+        <div class="bg-slate-50 rounded-3xl shadow hover:shadow-lg transition overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" class="h-56 w-full object-cover"
+            alt="Luxury Furnished House" />
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Luxury Flat – Nasr City</h3>
+            <p class="text-slate-600 mb-4">3 Qol • Elevator • Security • Near Services</p>
+            <a href="#contact" class="inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Book Now</a>
+          </div>
+        </div>
+
+
+        <!-- House 3 -->
+        <div class="bg-slate-50 rounded-3xl shadow hover:shadow-lg transition overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" class="h-56 w-full object-cover"
+            alt="Affordable Furnished Studio" />
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Studio – Giza</h3>
+            <p class="text-slate-600 mb-4">Qiimo Jaban • Nadiif • Ku dhow Isbitaallo</p>
+            <a href="#contact" class="inline-block bg-blue-700 text-white px-5 py-2 rounded-xl">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CTA -->
+      <div class="mt-16 text-center">
+        <a href="https://wa.me/2014184102"
+          class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition px-8 py-4 rounded-2xl text-white font-semibold">
+          <i class='bx bxl-whatsapp text-2xl'></i> Weydii Guri Diyaar ah
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ================= JOBS ================= -->
+  <section id="jobs" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Shaqooyinka Furan</h2>
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-2xl shadow flex justify-between items-center">
+          <div>
+            <h3 class="font-bold text-xl">Travel Consultant</h3>
+            <p class="text-slate-600">Cairo – Full Time</p>
+          </div>
+          <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl">Apply</a>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow flex justify-between items-center">
+          <div>
+            <h3 class="font-bold text-xl">Medical Coordinator</h3>
+            <p class="text-slate-600">Giza – Part Time</p>
+          </div>
+          <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl">Apply</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="py-24 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-4">La Xiriir Warfaa</h2>
+      <p class="text-center text-slate-300 mb-16">Nala soo xiriir si aad u hesho adeeg degdeg ah & mid lagu kalsoonaan
+        karo</p>
+
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <i class='bx bx-map text-3xl text-blue-500'></i>
+            <div>
+              <h4 class="font-semibold text-lg">Cinwaan</h4>
+              <p class="text-slate-300">Cairo, Egypt</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class='bx bx-phone text-3xl text-blue-500'></i>
+            <div>
+              <h4 class="font-semibold text-lg">Telefoon / WhatsApp</h4>
+              <p class="text-slate-300">+20 151 418 4102</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class='bx bx-envelope text-3xl text-blue-500'></i>
+            <div>
+              <h4 class="font-semibold text-lg">Email</h4>
+              <p class="text-slate-300">info@warfaa.com</p>
+            </div>
+          </div>
+          <a href="https://wa.me/+20 151 418 4102"
+            class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition px-6 py-3 rounded-xl font-semibold">
+            <i class='bx bxl-whatsapp text-2xl'></i> WhatsApp Chat
+          </a>
+        </div>
+
+        <form class="bg-white p-8 rounded-3xl shadow-xl grid gap-6">
+          <input type="text" required placeholder="Magacaaga" class="p-4 rounded-xl border text-slate-900" />
+          <input type="email" required placeholder="Email" class="p-4 rounded-xl border text-slate-900" />
+          <input type="text" placeholder="Mawduuca" class="p-4 rounded-xl border text-slate-900" />
+          <textarea rows="5" required placeholder="Fariintaada" class="p-4 rounded-xl border text-slate-900"></textarea>
+          <button type="submit"
+            class="bg-blue-700 hover:bg-blue-600 transition px-6 py-4 rounded-xl font-semibold text-white">Dir
+            Fariin</button>
+          <p class="text-sm text-slate-500">Waaan kula soo xiriiri doonnaa sida ugu dhaqsaha badan.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-black text-slate-400 text-center py-6">
+    <p>© 2025 Warfaa Travel & Trade – Egypt | U Adeegaya Soomaalida</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+  <!-- Start of Tawk.to Script -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/694327579eacfa1982eafb39/1jcn53boa';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
     })();
-    </script>
-    <!-- End of Tawk.to Script -->
+  </script>
+  <!-- End of Tawk.to Script -->
 </body>
+
 </html>
