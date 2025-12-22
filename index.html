@@ -760,58 +760,75 @@
       </div>
     </div>
   </section>
-  <!-- ================= JOBS ================= -->
+<!-- ================= JOBS ================= -->
 <section id="jobs" class="py-24">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-4xl font-bold text-center mb-12">Shaqooyinka Furan</h2>
 
     <div class="space-y-6">
 
-      <!-- Travel Specialist -->
-      <div class="job-card p-4 border rounded-lg shadow-md">
+      <!-- Job Card -->
+      {% for job in jobs|default:"" %}
+      {% endfor %}
+
+      <div class="job-card p-6 border rounded-2xl shadow-md hover:shadow-lg transition bg-white">
         <h3 class="text-xl font-semibold">Travel Specialist</h3>
-        <p>Cairo – Full Time</p>
-        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl inline-block mt-2">Apply</a>
+        <p class="text-gray-600">Cairo – Full Time</p>
+        <button onclick="openFormModal('Travel Specialist')"
+                class="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-xl inline-block mt-3 transition">
+          Apply
+        </button>
       </div>
 
-      <!-- Visa & Immigration Officer -->
-      <div class="job-card p-4 border rounded-lg shadow-md">
+      <div class="job-card p-6 border rounded-2xl shadow-md hover:shadow-lg transition bg-white">
         <h3 class="text-xl font-semibold">Visa & Immigration Officer</h3>
-        <p>Cairo – Full Time</p>
-        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl inline-block mt-2">Apply</a>
+        <p class="text-gray-600">Cairo – Full Time</p>
+        <button onclick="openFormModal('Visa & Immigration Officer')"
+                class="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-xl inline-block mt-3 transition">
+          Apply
+        </button>
       </div>
 
-      <!-- Medical Travel Coordinator -->
-      <div class="job-card p-4 border rounded-lg shadow-md">
+      <div class="job-card p-6 border rounded-2xl shadow-md hover:shadow-lg transition bg-white">
         <h3 class="text-xl font-semibold">Medical Travel Coordinator</h3>
-        <p>Giza – Full Time</p>
-        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl inline-block mt-2">Apply</a>
+        <p class="text-gray-600">Giza – Full Time</p>
+        <button onclick="openFormModal('Medical Travel Coordinator')"
+                class="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-xl inline-block mt-3 transition">
+          Apply
+        </button>
       </div>
 
-      <!-- Logistics Coordinator -->
-      <div class="job-card p-4 border rounded-lg shadow-md">
+      <div class="job-card p-6 border rounded-2xl shadow-md hover:shadow-lg transition bg-white">
         <h3 class="text-xl font-semibold">Logistics Coordinator</h3>
-        <p>Cairo – Full Time</p>
-        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl inline-block mt-2">Apply</a>
+        <p class="text-gray-600">Cairo – Full Time</p>
+        <button onclick="openFormModal('Logistics Coordinator')"
+                class="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-xl inline-block mt-3 transition">
+          Apply
+        </button>
       </div>
 
-      <!-- Customer Support Rep -->
-      <div class="job-card p-4 border rounded-lg shadow-md">
+      <div class="job-card p-6 border rounded-2xl shadow-md hover:shadow-lg transition bg-white">
         <h3 class="text-xl font-semibold">Customer Service Representative</h3>
-        <p>Cairo – Full Time</p>
-        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl inline-block mt-2">Apply</a>
+        <p class="text-gray-600">Cairo – Full Time</p>
+        <button onclick="openFormModal('Customer Service Representative')"
+                class="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-xl inline-block mt-3 transition">
+          Apply
+        </button>
       </div>
 
-      <!-- Marketing Officer -->
-      <div class="job-card p-4 border rounded-lg shadow-md">
+      <div class="job-card p-6 border rounded-2xl shadow-md hover:shadow-lg transition bg-white">
         <h3 class="text-xl font-semibold">Marketing & Communications Officer</h3>
-        <p>Cairo – Part Time / Remote</p>
-        <a href="#contact" class="bg-blue-700 text-white px-4 py-2 rounded-xl inline-block mt-2">Apply</a>
+        <p class="text-gray-600">Cairo – Part Time / Remote</p>
+        <button onclick="openFormModal('Marketing & Communications Officer')"
+                class="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-xl inline-block mt-3 transition">
+          Apply
+        </button>
       </div>
 
     </div>
   </div>
 </section>
+
 
 
   <!-- ================= CONTACT ================= -->
@@ -863,6 +880,33 @@
       </div>
     </div>
   </section>
+ <!-- ================= APPLICATION FORM MODAL ================= -->
+<div id="formModal" class="fixed inset-0 z-50 hidden bg-black/60 flex items-center justify-center p-4">
+
+  <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl w-full max-w-3xl relative animate-fade-in">
+
+    <!-- Header -->
+    <div class="flex justify-between items-center p-4 border-b dark:border-gray-700">
+      <h3 id="jobTitle" class="text-lg font-semibold text-gray-800 dark:text-white">
+        Job Application
+      </h3>
+      <button onclick="closeFormModal()"
+              class="text-gray-500 hover:text-red-600 text-xl">
+        ✕
+      </button>
+    </div>
+
+    <!-- Google Form -->
+    <div class="h-[70vh]">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeCjyLeFpRaCRq-WktUYvcz_HfupI0E0Dy6-gwjtjK5ou7sGA/viewform?embedded=true"
+        class="w-full h-full border-0 rounded-b-2xl"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</div>
 
   <!-- ================= FOOTER ================= -->
   <footer class="bg-black text-slate-400 text-center py-6">
@@ -885,7 +929,25 @@
       s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
     })();
+      function openFormModal(jobName) {
+    document.getElementById('jobTitle').innerText = jobName + ' – Application';
+    document.getElementById('formModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeFormModal() {
+    document.getElementById('formModal').classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeFormModal();
+  });
+
   </script>
+
+
+
   <!-- End of Tawk.to Script -->
 </body>
 
